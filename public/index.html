@@ -24,6 +24,11 @@
     ga('send', 'pageview');
   </script>
 
+  <!-- lazy loading -->
+  <script type="text/javascript" src="script/jquery.js"></script>
+  <script type="text/javascript" src="script/jquery.lazy.min.js"></script>
+
+
   <title>The Jakdang</title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport" name="viewport">
@@ -1541,19 +1546,19 @@
   <noscript><link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700,400italic,700italic|Varela+Round&amp;subset=latin,latin-ext"></noscript>
   <link rel="preload" media="screen" href="https://static-assets.strikinglycdn.com/themes/fresh/main_v4.f1298bcad1eb482a8e2a.bundle.css" as="style" onload="this.rel='stylesheet'">
   <link href="https://static-assets.strikinglycdn.com/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="/i/pwa/manifest.json" rel="manifest">
-  <link href="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_60,w_60,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" rel="apple-touch-icon" sizes="60x60">
+  <!-- <link href="/i/pwa/manifest.json" rel="manifest"> -->
+  <!-- <link href="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_60,w_60,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" rel="apple-touch-icon" sizes="60x60">
   <link href="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_76,w_76,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" rel="apple-touch-icon" sizes="76x76">
   <link href="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_120,w_120,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" rel="apple-touch-icon" sizes="120x120">
-  <link href="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_152,w_152,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" rel="apple-touch-icon" sizes="152x152">
+  <link href="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_152,w_152,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" rel="apple-touch-icon" sizes="152x152"> -->
   <meta content="The Jakdang" property="og:title">
   <meta content="http://thejakdang.com/" property="og:url">
-  <meta content="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" property="og:image">
+  <!-- <meta content="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" property="og:image"> -->
   <meta content="The Jakdang" property="og:site_name">
   <meta content="" property="og:description">
   <meta content="The Jakdang" itemprop="name">
   <meta content="" itemprop="description">
-  <meta content="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" itemprop="image">
+  <!-- <meta content="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" itemprop="image"> -->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="The Jakdang" name="twitter:title">
   <meta content="" name="twitter:description">
@@ -1562,7 +1567,10 @@
   <meta name="strikingly-host-suffix" content="strikingly.com">
   <meta name="support-helper" content="{&quot;permalink&quot;:&quot;jakdang&quot;,&quot;id&quot;:11459492}">
   <link rel="canonical" href="http://thejakdang.com/">
-  <script>
+
+
+
+  <!-- <script>
     var _strk = _strk || []
 _strk.push = function(arg1, arg2){
   var _arrayPush = Array.prototype.push.bind(this)
@@ -1578,31 +1586,39 @@ window.runAfterDomBinding = {
     _strk.push(['Page.didMount', fn])
   }
 }
-</script>
+</script> -->
 
 
   <!-- CUSTOM_CODE_START -->
   <!-- CUSTOM_CODE_END -->
 
   <meta name="asset-url" content="https://static-assets.strikinglycdn.com">
-  <script>
+  <!-- <script>
     (function() {
     window.$B || (window.$B = {});
 
   }).call(this);
 </script>
-  <script src="https://static-assets.strikinglycdn.com/detectIE-29660a929516ac61f29b3e574d0424bc6ef4f3c57786c28053ed04c35b8f5a58.js" async="async"></script>
+  <script src="https://static-assets.strikinglycdn.com/detectIE-29660a929516ac61f29b3e574d0424bc6ef4f3c57786c28053ed04c35b8f5a58.js" async="async"></script> -->
 
+  <!-- lazy loading -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+        //alert('Document Ready!');
+        $('.lazy').Lazy();
+    });
+  </script>
 </head>
 
 <body class="show locale-en" id="user_sites">
+
   <div class="" data-id="11459492" id="s-page-container">
     <div data-hypernova-key="SiteBootstrapper" data-hypernova-id="074bc0f2-6580-48fa-95df-83dfba0c292b" data-hypernova-emotion-id="">
       <div data-reactroot="">
         <div id="s-content" class="s-variation-default  s-font-heading-archivo-narrow s-font-title-archivo-narrow s-font-body-default s-entrance-mask" lang="en">
           <div class="social-thumbnail">
             <div style="display:none">
-              <img src="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" width="300" height="300">
+              <!-- <img src="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/192278/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_olgxbg.png" width="300" height="300"> -->
             </div>
             </div>
             <div>
@@ -1761,8 +1777,10 @@ window.runAfterDomBinding = {
                       <div>
                         <!-- <div class="s-bg-image s-bg-light-text s-bg-overlay s-new-title-section s-section s-section-full " style="background-repeat:repeat;background-size:auto;background-color:transparent;background-position:50% 50%;background-image:url(//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/192278/play-stone-1743645_1920_cskiw1.jpg)"
                           data-react-style="{&quot;backgroundRepeat&quot;:&quot;repeat&quot;,&quot;backgroundSize&quot;:&quot;auto&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"> -->
-                        <div class="s-bg-image s-bg-light-text s-bg-overlay s-new-title-section s-section s-section-full " style="background-repeat:repeat;background-size:auto;background-color:transparent;background-position:50% 50%;
-                          background-image:url(index-asset/play-stone.jpg)">
+                        <div class="lazy s-bg-image s-bg-light-text s-bg-overlay s-new-title-section s-section s-section-full " style="background-repeat:repeat;background-size:auto;
+                        background-color:transparent;background-position:50% 50%;
+                          background-image:url(index-asset/play-stone.jpg)"
+                          data-src="index-asset/play-stone.jpg">
                           <div class="container">
                             <div class="sixteen columns">
                               <div class="s-title-group s-only-title-group ">
@@ -1867,7 +1885,8 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:795px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.25%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="795" src="index-asset/lost-city.png"><noscript><img alt="" title="" class="crop-default" data-description="" width="1200" height="795" src="index-asset/lost-city.png"></noscript></div>
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="795" src="index-asset/lost-city.png"><noscript>
+                                                      <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="795" src="index-asset/lost-city.png"></noscript></div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -1920,11 +1939,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:800px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
-                                                    <div><img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
                                                       src="index-asset/colorful-city.jpg"
                                                       data-src="index-asset/colorful-city.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
                                                         src="index-asset/colorful-city.jpg">
                                                       </noscript>
                                                     </div>
@@ -1976,11 +1995,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:675px">
                                                     <div class="s-ratio-fill" style="padding-bottom:56.25%"></div>
-                                                    <div><img alt="" title="" class="crop-default" data-description="" width="1200" height="675"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="675"
                                                       src="index-asset/island-of-legends.jpg"
                                                       data-src="index-asset/island-of-legends.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="675"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="675"
                                                         src="index-asset/island-of-legends.jpg">
                                                       </noscript>
                                                     </div>
@@ -2037,11 +2056,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:800px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
-                                                    <div><img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
                                                       src="index-asset/distrust.jpg"
                                                       data-src="index-asset/distrust.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
                                                         src="index-asset/distrust.jpg">
                                                       </noscript>
                                                     </div>
@@ -2095,11 +2114,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:960px;max-height:641px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.77%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="960" height="641"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="960" height="641"
                                                       src="index-asset/danjong.jpg"
                                                       data-src="index-asset/danjong.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="960" height="641"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="960" height="641"
                                                         src="index-asset/danjong.jpg">
                                                       </noscript>
                                                     </div>
@@ -2152,11 +2171,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="900"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
                                                       src="index-asset/rich-game.jpg"
                                                       data-src="index-asset/rich-game.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
                                                         src="index-asset/rich-game.jpg">
                                                       </noscript></div>
                                                   </div>
@@ -2206,11 +2225,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:864px">
                                                     <div class="s-ratio-fill" style="padding-bottom:72.00%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="864"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="864"
                                                       src="index-asset/t-mansion.jpg"
                                                       data-src="index-asset/t-mansion.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="864"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="864"
                                                         src="index-asset/t-mansion.jpg">
                                                       </noscript>
                                                     </div>
@@ -2283,11 +2302,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1026px;max-height:684px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1026" height="684"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1026" height="684"
                                                       src="index-asset/edu-game.jpg"
                                                       data-src="index-asset/edu-game.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1026" height="684"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1026" height="684"
                                                         src="index-asset/edu-game.jpg">
                                                       </noscript>
                                                     </div>
@@ -2340,11 +2359,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="900"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
                                                       src="index-asset/h-ondream.jpg"
                                                       data-src="index-asset/h-ondream.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
                                                         src="index-asset/h-ondream.jpg">
                                                       </noscript>
                                                     </div>
@@ -2396,11 +2415,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:960px;max-height:540px">
                                                     <div class="s-ratio-fill" style="padding-bottom:56.25%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="960" height="540"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="960" height="540"
                                                       src="index-asset/c-school.jpg"
                                                       data-src="index-asset/c-school.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="960" height="540"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="960" height="540"
                                                         src="index-asset/c-school.jpg">
                                                       </noscript>
                                                     </div>
@@ -2454,11 +2473,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="900"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
                                                       src="index-asset/game-design.jpg"
                                                       data-src="index-asset/game-design.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
                                                         src="index-asset/game-design.jpg">
                                                       </noscript>
                                                     </div>
@@ -2509,11 +2528,7 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="900"
-                                                      src="index-asset/project-secret.jpg"
-                                                      data-src="index-asset/project-secret.jpg">
-                                                      <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
                                                         src="index-asset/project-secret.jpg">
                                                       </noscript>
                                                     </div>
@@ -2566,11 +2581,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="900"
+                                                    <div><img alt="" title="" class="lzay crop-default" data-description="" width="1200" height="900"
                                                       src="index-asset/new-industry.jpg"
                                                       data-src="index-asset/new-industry.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
+                                                        <img alt="" title="" class="lzay crop-default" data-description="" width="1200" height="900"
                                                         src="index-asset/new-industry.jpg">
                                                       </noscript>
                                                     </div>
@@ -2643,11 +2658,11 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:800px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="800"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
                                                       src="index-asset/road-festa.jpg"
                                                       data-src="index-asset/road-festa.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
                                                         src="index-asset/road-festa.jpg">
                                                       </noscript>
                                                     </div>
@@ -2700,14 +2715,14 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:800px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
-                                                    <div><img alt="" title="" class=" crop-default" data-description="" width="1200" height="800"
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
                                                       src="index-asset/life-exploration.jpg"
                                                       data-src="index-asset/life-exploration.jpg">
                                                       <noscript>
-                                                        <img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
+                                                        <img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
                                                         src="index-asset/life-exploration.jpg">
                                                       </noscript>
-                                                      <script>!function(e){"use strict";var t=function(t,n,r){function o(e){if(i.body)return e();setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
+                                                      <!-- <script>!function(e){"use strict";var t=function(t,n,r){function o(e){if(i.body)return e();setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script> -->
                                                     </div>
                                                   </div>
                                                 </div>
@@ -2858,7 +2873,7 @@ window.runAfterDomBinding = {
             <div id="fb-root"></div>
             <div id="app-script-root"></div>
             <div id="app-view-root"></div>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js" defer="defer"></script>
+            <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js" defer="defer"></script> -->
             <!-- <script>
           window.jQuery || document.write('<script src="https://static-assets.strikinglycdn.com/jquery-f4e2137d267f77818d966e03df031337a38003039d43f15029422ddd171e14c4.js" defer="defer"><\/script>');
         </script>
