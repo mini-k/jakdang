@@ -1,4 +1,5 @@
 <!-- Powered by Strikingly.com 4 (1) Sep 17, 2018 at 21:15-->
+<!-- doctype required for lazy load -->
 <!DOCTYPE html>
 <html itemscope="" itemtype="http://schema.org/WebPage" lang="en" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -25,7 +26,7 @@
   </script>
 
   <!-- lazy loading -->
-  <script type="text/javascript" src="include/jquery.js"></script>
+  <script type="text/javascript" src="include/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="include/jquery.lazy.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
@@ -36,12 +37,13 @@
         scrollDirection: 'vertical',
         effect: 'fadeIn',
         visibleOnly: true,
+        threshold: 200,
 
         // diagnostics
         // onError: function(element) {
         //   console.log('error loading ' + element.data('src'));
         // }
-        //
+
         // beforeLoad: function(element) {
         //   // called before an elements gets handled
         //   console.log("Before lazy is handled");
@@ -302,7 +304,6 @@ window.runAfterDomBinding = {
                         <!-- <div class="s-bg-image s-bg-light-text s-bg-overlay s-new-title-section s-section s-section-full " style="background-repeat:repeat;background-size:auto;background-color:transparent;background-position:50% 50%;background-image:url(//res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/192278/play-stone-1743645_1920_cskiw1.jpg)"
                           data-react-style="{&quot;backgroundRepeat&quot;:&quot;repeat&quot;,&quot;backgroundSize&quot;:&quot;auto&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"> -->
                         <div class="s-bg-image s-bg-light-text s-bg-overlay s-new-title-section s-section s-section-full " style="background-repeat:no-repeat;background-size:cover;
-                        background-color:transparent;background-position:50% 50%;
                           background-image:url(index-asset/play-stone.jpg)"
                           data-src="index-asset/play-stone.jpg">
                           <div class="container">
@@ -409,7 +410,7 @@ window.runAfterDomBinding = {
                                                 <div>
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:795px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.25%"></div>
-                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="795" src="index-asset/lost-city.png" data-src="index-asset/lost-city.png">
+                                                    <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="795"  data-src="index-asset/lost-city.png">
                                                       <noscript>
                                                       <img alt="" title="" class="crop-default" data-description="" width="1200" height="795" src="index-asset/lost-city.png">
                                                     </noscript>
@@ -467,7 +468,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:800px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
-                                                      src="index-asset/colorful-city.jpg"
+
                                                       data-src="index-asset/colorful-city.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
@@ -523,7 +524,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:675px">
                                                     <div class="s-ratio-fill" style="padding-bottom:56.25%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="675"
-                                                      src="index-asset/island-of-legends.jpg"
+
                                                       data-src="index-asset/island-of-legends.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="675"
@@ -584,7 +585,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:800px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
-                                                      src="index-asset/distrust.jpg"
+
                                                       data-src="index-asset/distrust.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
@@ -642,7 +643,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:960px;max-height:641px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.77%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="960" height="641"
-                                                      src="index-asset/danjong.jpg"
+
                                                       data-src="index-asset/danjong.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="960" height="641"
@@ -699,7 +700,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
-                                                      src="index-asset/rich-game.jpg"
+
                                                       data-src="index-asset/rich-game.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
@@ -753,7 +754,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:864px">
                                                     <div class="s-ratio-fill" style="padding-bottom:72.00%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="864"
-                                                      src="index-asset/t-mansion.jpg"
+
                                                       data-src="index-asset/t-mansion.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="864"
@@ -830,7 +831,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1026px;max-height:684px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1026" height="684"
-                                                      src="index-asset/edu-game.jpg"
+
                                                       data-src="index-asset/edu-game.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1026" height="684"
@@ -887,7 +888,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
-                                                      src="index-asset/h-ondream.jpg"
+
                                                       data-src="index-asset/h-ondream.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
@@ -943,7 +944,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:960px;max-height:540px">
                                                     <div class="s-ratio-fill" style="padding-bottom:56.25%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="960" height="540"
-                                                      src="index-asset/c-school.jpg"
+
                                                       data-src="index-asset/c-school.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="960" height="540"
@@ -1001,7 +1002,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
-                                                      src="index-asset/game-design.jpg"
+
                                                       data-src="index-asset/game-design.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
@@ -1109,7 +1110,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:900px">
                                                     <div class="s-ratio-fill" style="padding-bottom:75.00%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="900"
-                                                      src="index-asset/new-industry.jpg"
+
                                                       data-src="index-asset/new-industry.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="900"
@@ -1186,7 +1187,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:800px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
-                                                      src="index-asset/road-festa.jpg"
+
                                                       data-src="index-asset/road-festa.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
@@ -1243,7 +1244,7 @@ window.runAfterDomBinding = {
                                                   <div class="s-ratio-box" style="max-width:1200px;max-height:800px">
                                                     <div class="s-ratio-fill" style="padding-bottom:66.67%"></div>
                                                     <div><img alt="" title="" class="lazy crop-default" data-description="" width="1200" height="800"
-                                                      src="index-asset/life-exploration.jpg"
+
                                                       data-src="index-asset/life-exploration.jpg">
                                                       <noscript>
                                                         <img alt="" title="" class="crop-default" data-description="" width="1200" height="800"
