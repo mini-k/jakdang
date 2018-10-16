@@ -1,0 +1,1518 @@
+@charset "UTF-8";
+
+a,
+h1,
+h2,
+h3,
+h4,
+img,
+input,
+label,
+li,
+p,
+strong,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit
+}
+
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Archivo Narrow Italic'), local('ArchivoNarrow-Italic'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tss2ApVBdCYD5Q7hcxTE1ArZ0bb1uXB62w.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Archivo Narrow Bold Italic'), local('ArchivoNarrow-BoldItalic'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tssxApVBdCYD5Q7hcxTE1ArZ0bb1scVfy94IPw.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tss0ApVBdCYD5Q7hcxTE1ArZ0bb-iXk.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Archivo Narrow Bold'), local('ArchivoNarrow-Bold'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tss3ApVBdCYD5Q7hcxTE1ArZ0b5LrGlT-9c.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: Brandon;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.2bf5f4d8928806f7c91c290b5814aff9.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.70c7d99488f7e8cf27634e9c58bf6217.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.44a3e64aa120d1b7964f10be29ad878b.svg#BrandonGrotesqueBoldRegular) format("svg")
+}
+
+@font-face {
+  font-family: Brandon;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.662dee687e0069f714f79db9bde55f81.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.662dee687e0069f714f79db9bde55f81.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.64088d528192c8fce171860f56a14a9f.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.04206b825348a69ee85b523c1e67a70f.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.348bd0ea620c7861d0c3ac028ba911ed.svg#BrandonGrotesqueRegularRg) format("svg")
+}
+
+@font-face {
+  font-family: Brandon;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.90829ddb7531a53c1dcd670d545999d2.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.2c18926b679dfb8abff6fc13c2b8beeb.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.518c0c41a5141b2e59732f43d9b70575.svg#BrandonGrotesqueLight) format("svg")
+}
+
+@font-face {
+  font-family: Brandon;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.78c65e04664b2559e1ca630e2606c3b5.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.78c65e04664b2559e1ca630e2606c3b5.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.43b22b68b4b50438a8c9d5ed49507204.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.b2cf0cf708268a04055c5d8545d811a4.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.785c578a01a0d60f61ad665fe481306d.svg#BrandonGrotesqueMedium) format("svg")
+}
+
+@font-face {
+  font-family: open_sans;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Bold-webfont.1d9c7945c7bc7dd0909105119bfbc191.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Bold-webfont.1d9c7945c7bc7dd0909105119bfbc191.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Bold-webfont.2e90d5152ce92858b62ba053c7b9d2cb.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Bold-webfont.76cc6be5d8a231dc012fef4bdb86f79c.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Bold-webfont.93349923b5274a36ac93cb3168d09123.svg#open_sansbold) format("svg")
+}
+
+@font-face {
+  font-family: open_sans;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-BoldItalic-webfont.6218c213bb8cf22b25710da6f3a90e48.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-BoldItalic-webfont.6218c213bb8cf22b25710da6f3a90e48.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-BoldItalic-webfont.7657144ec477cd61ac4a5d1af3fa2d28.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-BoldItalic-webfont.b6690626036a7d6824632769305b1978.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-BoldItalic-webfont.2b4eeeaef53b3496a5cdf82803666ed7.svg#open_sansbold_italic) format("svg")
+}
+
+@font-face {
+  font-family: open_sans;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Italic-webfont.43d5342998f3607bd61a8239e98b1160.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Italic-webfont.43d5342998f3607bd61a8239e98b1160.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Italic-webfont.f42641eed834f7b97a9499362c6c8855.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Italic-webfont.de7ef31e6295902347c5c3643b2d82da.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Italic-webfont.5b774c25787e0a52c013463c9e3c4219.svg#open_sansitalic) format("svg")
+}
+
+@font-face {
+  font-family: open_sans;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.09e00aa7622ece30a0f1e06b55f66c2a.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.09e00aa7622ece30a0f1e06b55f66c2a.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.45b47f3e9c7d74b80f5c6e0a3c513b23.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.2e98fc3ce85f31f63010b706259cb604.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.8f04ed9aeb2185499068d84842b95aa1.svg#open_sanslight) format("svg")
+}
+
+@font-face {
+  font-family: open_sans;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-LightItalic-webfont.550b5fda4a27cfedb7131b1a6e85e748.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-LightItalic-webfont.550b5fda4a27cfedb7131b1a6e85e748.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-LightItalic-webfont.b553da506077488bc65289e10841d527.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-LightItalic-webfont.1d22953c479914c2f801e08de666b0e8.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-LightItalic-webfont.fd6dd5fa10c5a74f0a767eeb695342f1.svg#open_sanslight_italic) format("svg")
+}
+
+@font-face {
+  font-family: open_sans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.79515ad0788973c533405f7012dfeccd.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.488d5cc145299ba07b75495100419ee6.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.8185eb3059c46e4169ce107dfcf85950.svg#open_sansregular) format("svg")
+}
+
+@font-face {
+  font-family: open_sans;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.f28eb362fb6afe946d822ee5451c2146.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.f28eb362fb6afe946d822ee5451c2146.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.697574b47bcfdd2c45e3e63c7380dd67.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.b32acea6fd3c228b5059042c7ad21c55.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.3f6b1eed8a0832d6f316fc26526348a8.svg#open_sanssemibold) format("svg")
+}
+
+@font-face {
+  font-family: open_sans;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.719f7321a8366f4ee609737026432113.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.64f886b232962979e2eaf29d93108286.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70eb93d7ba2ad241180085a9a74b0b95.svg#open_sanssemibold_italic) format("svg")
+}
+
+#s-content h2 {
+  font-size: 36px
+}
+
+#s-content h3 {
+  font-size: 24px
+}
+
+#s-content h1,
+#s-content h2,
+#s-content h3,
+#s-content h4 {
+  font-weight: inherit;
+  line-height: inherit
+}
+
+@media only screen and (max-width:479px) {
+  #s-content h1 {
+    font-size: 36px
+  }
+
+  #s-content h2 {
+    font-size: 24px
+  }
+
+  #s-content h3 {
+    font-size: 20px
+  }
+
+  #s-content h4 {
+    font-size: 16px
+  }
+}
+
+.s-text .s-component-content b,
+.s-text .s-component-content strong {
+  font-weight: 700
+}
+
+.s-section,
+.s-section .s-component.s-text .s-component-content,
+.s-section .s-component.s-text .s-component-content p,
+.s-section .s-component.s-text .s-component-content span,
+.s-section .s-component.s-text .s-component-content strong {
+  line-height: 1.45
+}
+
+.s-section .s-item-text-group .s-item-title {
+  margin-bottom: 5px
+}
+
+.s-section .s-repeatable {
+  clear: both
+}
+
+.s-section.s-text-section .s-repeatable-item {
+  margin-bottom: 35px
+}
+
+.s-section.s-text-section {
+  text-align: center
+}
+
+.s-section.s-text-section .s-item-text-group {
+  text-align: left
+}
+
+.container .columns.no-float {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  zoom: 1
+}
+
+.container .fourteen.columns {
+  width: 896px
+}
+
+@media only screen and (min-width:1000px) and (max-width:1299px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 944px
+  }
+
+  .container .columns {
+    display: inline;
+    float: left;
+    margin-left: 13px;
+    margin-right: 13px
+  }
+
+  .container .columns.no-float {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    zoom: 1
+  }
+
+  .container .fourteen.columns {
+    width: 800px
+  }
+
+  .container .sixteen.columns {
+    width: 918px
+  }
+}
+
+@media only screen and (min-width:876px) and (max-width:999px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 832px
+  }
+
+  .container .columns {
+    display: inline;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px
+  }
+
+  .container .columns.no-float {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    zoom: 1
+  }
+
+  .container .fourteen.columns {
+    width: 704px
+  }
+
+  .container .sixteen.columns {
+    width: 808px
+  }
+}
+
+@media only screen and (min-width:728px) and (max-width:875px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 656px
+  }
+
+  .container .columns {
+    display: inline;
+    float: left;
+    margin-left: 9px;
+    margin-right: 9px
+  }
+
+  .container .columns.no-float {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    zoom: 1
+  }
+
+  .container .fourteen.columns {
+    width: 556px
+  }
+
+  .container .sixteen.columns {
+    width: 638px
+  }
+}
+
+@media only screen and (min-width:490px) and (max-width:727px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 456px
+  }
+
+  .container .columns,
+  .container .fourteen.columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 440px
+  }
+}
+
+@media only screen and (min-width:430px) and (max-width:489px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 396px
+  }
+
+  .container .columns,
+  .container .fourteen.columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 380px
+  }
+}
+
+@media only screen and (min-width:370px) and (max-width:429px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 336px
+  }
+
+  .container .columns,
+  .container .fourteen.columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 320px
+  }
+}
+
+@media only screen and (min-width:350px) and (max-width:369px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 316px
+  }
+
+  .container .columns,
+  .container .fourteen.columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 300px
+  }
+}
+
+@media only screen and (max-width:349px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 296px
+  }
+
+  .container .columns,
+  .container .fourteen.columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 280px
+  }
+}
+
+@font-face {
+  font-family: Gotham Rounded;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6621f7aaa4ba407d660062f5bb9fee1c.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6621f7aaa4ba407d660062f5bb9fee1c.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.3224195bcb8490e0f70ec00fce1fa59d.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.8572f36da289b314a7b4de8cca1fe77c.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6fd9252cb948c0be27a0060ac5adb562.svg#GothamRounded) format("svg")
+}
+
+@font-face {
+  font-family: Gotham Rounded;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.04c829fbce61454f6910c810cb81ce36.eot);
+  src: url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.04c829fbce61454f6910c810cb81ce36.eot?#iefix) format("embedded-opentype"), url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.3d4d389aff7100a6b3b7825946387a87.woff) format("woff"), url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.0269d50dc0275de76fd0f6ec19938146.ttf) format("truetype"), url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.a9e3a2ab3b36f9b4db979d62b75e2f3f.svg#GothamRounded) format("svg")
+}
+
+.s-item-title {
+  margin-bottom: 5px
+}
+
+.s-variation-default .s-item-title {
+  font-family: gotham rounded, sans-serif
+}
+
+.s-variation-default .s-item-title {
+  color: #678
+}
+
+.s-variation-default .s-section.s-text-section {
+  background-color: #eee
+}
+
+.s-variation-default .s-section,
+.s-variation-default .s-section.s-bg-white {
+  background-color: #fff
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0
+}
+
+a,
+h1,
+h4,
+img,
+input,
+label,
+li,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit
+}
+
+ul {
+  list-style: none
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic
+}
+
+a {
+  text-decoration: none
+}
+
+html {
+  font-size: 14px;
+  line-height: 1
+}
+
+input::-webkit-input-placeholder {
+  color: #c0c4c8
+}
+
+.clearfix {
+  position: relative
+}
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table
+}
+
+.ib {
+  display: inline-block;
+  zoom: 1
+}
+
+.hidden {
+  display: none
+}
+
+.center {
+  text-align: center
+}
+
+body {
+  -webkit-animation-delay: .1s;
+  -webkit-animation-duration: .1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-timing-function: linear
+}
+
+#strikingly-tooltip-container {
+  font-family: open_sans, Open Sans, sans-serif;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000
+}
+
+::-webkit-input-placeholder {
+  color: #aaa;
+  font-weight: 400
+}
+
+::-webkit-input-placeholder input[type=text]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-webkit-input-placeholder input[type=text]::-moz-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-webkit-input-placeholder input[type=text]:-ms-input-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-webkit-input-placeholder input[type=text]:-moz-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+:-moz-placeholder {
+  color: #aaa;
+  font-weight: 400
+}
+
+:-moz-placeholder input[type=text]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+:-moz-placeholder input[type=text]::-moz-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+:-moz-placeholder input[type=text]:-ms-input-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+:-moz-placeholder input[type=text]:-moz-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-moz-placeholder {
+  color: #aaa;
+  font-weight: 400
+}
+
+::-moz-placeholder input[type=text]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-moz-placeholder input[type=text]::-moz-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-moz-placeholder input[type=text]:-ms-input-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-moz-placeholder input[type=text]:-moz-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-ms-input-placeholder {
+  color: #aaa;
+  font-weight: 400
+}
+
+::-ms-input-placeholder input[type=text]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-ms-input-placeholder input[type=text]::-moz-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-ms-input-placeholder input[type=text]:-ms-input-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::-ms-input-placeholder input[type=text]:-moz-placeholder {
+  color: #000;
+  opacity: 1
+}
+
+::input-placeholder {
+  color: #aaa;
+  font-weight: 400
+}
+
+#s-support-widget-container {
+  bottom: 0;
+  box-sizing: border-box;
+  position: fixed;
+  right: 0;
+  z-index: 100000
+}
+
+ul.slides li.slide {
+  outline: 0;
+  position: relative
+}
+
+.section-anchor {
+  left: 0;
+  position: absolute;
+  top: 0
+}
+
+#s-content {
+  font-size: 16px;
+  margin-left: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative
+}
+
+#s-content h1 {
+  font-size: 45px
+}
+
+#s-content h4 {
+  font-size: 20px
+}
+
+#s-content h1,
+#s-content h4 {
+  font-weight: inherit;
+  line-height: inherit
+}
+
+@media only screen and (max-width:479px) {
+  #s-content h1 {
+    font-size: 36px
+  }
+
+  #s-content h4 {
+    font-size: 16px
+  }
+}
+
+.s-text .s-component-content {
+  word-wrap: break-word
+}
+
+.s-text .s-component-content b {
+  font-weight: 700
+}
+
+.s-text .s-component-content p {
+  line-height: inherit
+}
+
+.s-image {
+  min-height: 1px
+}
+
+.s-image img {
+  max-width: 100%;
+  vertical-align: middle
+}
+
+.s-email-form .s-email-form-fields-group .s-email-form-field {
+  margin: 0 auto;
+  padding: 5px 0;
+  position: relative
+}
+
+.s-email-form .s-email-form-fields-group .s-email-form-field label {
+  color: #bbb;
+  font-size: 18px;
+  left: 10px;
+  line-height: 25px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  text-overflow: ellipsis;
+  top: 15px;
+  white-space: nowrap;
+  width: 91%
+}
+
+.s-email-form .s-email-form-fields-group .s-email-form-field input[type=text] {
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  color: #444;
+  font-size: 18px;
+  padding: 11px 10px
+}
+
+.s-email-form .s-email-form-fields-group .s-email-form-field {
+  width: 380px
+}
+
+.s-email-form .s-email-form-fields-group .s-email-form-field input[type=text] {
+  width: 360px
+}
+
+@media only screen and (max-width:429px) {
+  .s-email-form .s-email-form-fields-group .s-email-form-field {
+    width: 100% !important
+  }
+
+  .s-email-form .s-email-form-fields-group .s-email-form-field input[type=text] {
+    box-sizing: border-box;
+    max-width: 100% !important;
+    width: 100% !important
+  }
+}
+
+.mobile-actions,
+.navbar-drawer,
+.navbar-drawer-bar {
+  display: none
+}
+
+.navbar-drawer-bar {
+  background-color: transparent;
+  box-sizing: border-box;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1010
+}
+
+.navbar-drawer-bar a {
+  background: hsla(0, 0%, 45%, .9);
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  outline-style: none;
+  position: relative;
+  text-align: center;
+  width: 40px;
+  z-index: 1020
+}
+
+.navbar-drawer-bar a.navbar {
+  float: left
+}
+
+.navbar-drawer-bar .navbar {
+  background: #888;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .3);
+  color: #fff
+}
+
+.navbar-drawer-bar .navbar {
+  line-height: 48px
+}
+
+.navbar-drawer-bar .navbar .navbar-icons {
+  -webkit-transform: rotate(0);
+  display: inline-block;
+  height: 17.3px;
+  position: relative;
+  transform: rotate(0);
+  width: 22px
+}
+
+.navbar-drawer-bar .navbar .navbar-icons span {
+  -webkit-transform: rotate(0);
+  background-color: #fff;
+  border-radius: 2px;
+  display: block;
+  height: 2px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transform: rotate(0);
+  width: 100%
+}
+
+.navbar-drawer-bar .navbar .navbar-icons span:first-child {
+  -webkit-transform-origin: left center;
+  top: 0;
+  transform-origin: left center
+}
+
+.navbar-drawer-bar .navbar .navbar-icons span:nth-child(2) {
+  -webkit-transform-origin: left center;
+  top: 6px;
+  transform-origin: left center
+}
+
+.navbar-drawer-bar .navbar .navbar-icons span:nth-child(3) {
+  -webkit-transform-origin: left center;
+  top: 12px;
+  transform-origin: left center
+}
+
+.navbar-drawer-bar .mobile-cart-icon {
+  float: right;
+  margin-left: 10px
+}
+
+.navbar-drawer-bar .drawer-container {
+  height: 40px;
+  padding: 10px;
+  position: relative;
+  text-align: center
+}
+
+#s-new-mobile-actions-wrapper {
+  background-color: #fff;
+  bottom: -2px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .22);
+  display: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 1000
+}
+
+.s-mobile-actions {
+  width: 100%
+}
+
+.strikingly-drawer {
+  background: #fff;
+  display: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002
+}
+
+.strikingly-drawer.navbar-drawer {
+  -webkit-transform: translateY(-100%);
+  max-height: 100vh;
+  max-height: 100%;
+  transform: translateY(-100%)
+}
+
+.strikingly-drawer ul {
+  -webkit-overflow-scrolling: touch;
+  list-style: none;
+  overflow: auto;
+  padding-top: 44px;
+  position: relative
+}
+
+.strikingly-drawer ul li {
+  display: block;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1015
+}
+
+.strikingly-drawer ul li a {
+  border-bottom: 1px solid #eee;
+  color: #666;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px 30px
+}
+
+.strikingly-drawer ul li a.logo {
+  border: none;
+  display: block;
+  padding: 26px;
+  text-align: center
+}
+
+.strikingly-drawer ul li a.logo .msg {
+  color: #999;
+  font-family: brandon, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase
+}
+
+.s-category-drawer-wrapper {
+  display: none
+}
+
+@media only screen and (max-width:727px) {
+  .s-section.s-text-section .s-repeatable-item.columns {
+    margin-bottom: 35px
+  }
+
+  .s-nav {
+    display: none
+  }
+
+  .s-category-drawer-wrapper {
+    display: block
+  }
+}
+
+#navbar-drawer-mask {
+  background-color: rgba(0, 0, 0, .4);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1001
+}
+
+.mobile-actions {
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  height: 172px;
+  opacity: 0;
+  position: fixed;
+  right: 7px;
+  top: -170px;
+  z-index: 999
+}
+
+@media only screen and (max-width:727px) {
+
+  #s-new-mobile-actions-wrapper,
+  .mobile-actions,
+  .navbar-drawer-bar,
+  .strikingly-drawer {
+    display: block
+  }
+}
+
+.s-ecommerce-shopping-cart-wrapper {
+  display: none
+}
+
+.s-ecommerce-nav-shopping-cart-wrapper.hidden {
+  display: none !important
+}
+
+.fixed-login-container {
+  display: none
+}
+
+@media screen and (min-width:728px) {
+  .fixed-login-container {
+    display: block;
+    position: fixed;
+    right: 150px;
+    top: 10px;
+    z-index: 110
+  }
+}
+
+@media screen and (max-width:727px) {
+
+  #loginContainer,
+  .fixed-login-container {
+    display: none
+  }
+}
+
+#loginContainer {
+  display: inline;
+  white-space: nowrap
+}
+
+.s-ecommerce-shopping-cart-wrapper.no-cart+.fixed-login-container {
+  right: 10px
+}
+
+.s-bg-overlay {
+  position: relative
+}
+
+.s-bg-overlay:before {
+  -webkit-transform-style: preserve-3d;
+  background: rgba(0, 0, 0, .39);
+  content: "";
+  display: block !important;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-style: preserve-3d;
+  width: 100%
+}
+
+.s-section {
+  color: #50555c;
+  padding: 80px 0
+}
+
+.s-section,
+.s-section .s-component.s-text .s-component-content,
+.s-section .s-component.s-text .s-component-content p {
+  line-height: 1.45
+}
+
+.s-section.s-bg-light-text {
+  color: #fff
+}
+
+.s-section.s-bg-light-text .s-subtitle,
+.s-section.s-bg-light-text .s-title {
+  color: #fff
+}
+
+@media only screen and (max-width:727px) {
+  .s-section {
+    padding: 40px 0
+  }
+}
+
+.s-section .s-title-group {
+  margin-bottom: 30px;
+  position: relative
+}
+
+.s-section .s-title-group.s-only-title-group {
+  margin-bottom: 0
+}
+
+.s-section .s-title-group .s-title {
+  line-height: 1.2;
+  margin-bottom: 15px
+}
+
+.s-section .s-title-group .s-title .s-component.s-text .s-component-content,
+.s-section .s-title-group .s-title .s-component.s-text .s-component-content p {
+  line-height: 1.2
+}
+
+.s-section .s-title-group .s-subtitle {
+  margin-bottom: 10px
+}
+
+.s-text-color-blue {
+  color: #26c9ff
+}
+
+.container:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0
+}
+
+.clearfix:after {
+  clear: both
+}
+
+.clearfix {
+  zoom: 1
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 1056px
+}
+
+.container .columns {
+  display: inline;
+  float: left;
+  margin-left: 14px;
+  margin-right: 14px
+}
+
+.container .sixteen.columns {
+  width: 1028px
+}
+
+@media only screen and (min-width:1000px) and (max-width:1299px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 944px
+  }
+
+  .container .columns {
+    display: inline;
+    float: left;
+    margin-left: 13px;
+    margin-right: 13px
+  }
+
+  .container .sixteen.columns {
+    width: 918px
+  }
+}
+
+@media only screen and (min-width:876px) and (max-width:999px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 832px
+  }
+
+  .container .columns {
+    display: inline;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px
+  }
+
+  .container .sixteen.columns {
+    width: 808px
+  }
+}
+
+@media only screen and (min-width:728px) and (max-width:875px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 656px
+  }
+
+  .container .columns {
+    display: inline;
+    float: left;
+    margin-left: 9px;
+    margin-right: 9px
+  }
+
+  .container .sixteen.columns {
+    width: 638px
+  }
+}
+
+@media only screen and (min-width:490px) and (max-width:727px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 456px
+  }
+
+  .container .columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 440px
+  }
+}
+
+@media only screen and (min-width:430px) and (max-width:489px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 396px
+  }
+
+  .container .columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 380px
+  }
+}
+
+@media only screen and (min-width:370px) and (max-width:429px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 336px
+  }
+
+  .container .columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 320px
+  }
+}
+
+@media only screen and (min-width:350px) and (max-width:369px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 316px
+  }
+
+  .container .columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 300px
+  }
+}
+
+@media only screen and (max-width:349px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 296px
+  }
+
+  .container .columns,
+  .container .sixteen.columns {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 280px
+  }
+}
+
+.s-section.s-new-title-section {
+  text-align: center
+}
+
+#header-spacer {
+  height: 120px
+}
+
+li.slide.s-first-visible-section .s-section:not(.no-resize).s-new-title-section {
+  padding-bottom: 200px;
+  padding-top: 200px
+}
+
+#header-container {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+  position: fixed;
+  width: 100%;
+  z-index: 210
+}
+
+#header-container .header {
+  position: relative;
+  position: static;
+  zoom: 1
+}
+
+#header-container .header:after {
+  clear: both;
+  content: "";
+  display: table
+}
+
+#header-container .header .logo {
+  margin: 20px auto 10px;
+  max-width: 800px;
+  text-align: center
+}
+
+#header-container .header .logo img {
+  display: block;
+  max-height: 100px;
+  max-width: 100%
+}
+
+#header-container .header .nav {
+  margin-bottom: 30px
+}
+
+#header-container .header .nav ul {
+  position: relative;
+  text-align: center;
+  zoom: 1
+}
+
+#header-container .header .nav ul:after {
+  clear: both;
+  content: "";
+  display: table
+}
+
+#header-container .header .nav ul li {
+  display: inline-block;
+  padding: 0 18px;
+  zoom: 1
+}
+
+#header-container .header .nav ul a {
+  color: #567;
+  display: block;
+  font-size: 100%;
+  font-weight: 500;
+  padding: 5px 0;
+  text-decoration: none;
+  text-transform: uppercase
+}
+
+#header-container .header .power {
+  /* background: url('../index-asset/icon-power.png') 50%; */
+  /* background-color: white; */
+  /* border-radius: 35px; */
+  bottom: -25px;
+  height: 50px;
+  left: 50%;
+  margin-left: -35px;
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  z-index: 101
+}
+
+#header-container .header .power .s-component-content {
+  display: table-cell;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  width: 70px
+}
+
+#header-container .header .power .s-component-content img {
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 auto;
+  max-height: 40px;
+  max-width: 32px;
+  vertical-align: middle;
+  zoom: 1
+}
+
+#s-content {
+  font-size: 15px
+}
+
+.s-section.s-bg-light-text {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .2)
+}
+
+.s-title-group {
+  text-align: center
+}
+
+.s-title-group .s-component-content {
+  position: relative
+}
+
+.s-title-group .sb-title-left-align .s-component-content {
+  display: block
+}
+
+.s-title-group .sb-title-left-align .s-component-content:after,
+.s-title-group .sb-title-left-align .s-component-content:before {
+  display: none !important
+}
+
+.s-variation-default {
+  font-family: sans-serif
+}
+
+.s-variation-default .s-title {
+  font-family: gotham rounded, sans-serif
+}
+
+.s-variation-default .s-subtitle {
+  font-family: arapey, sans-serif
+}
+
+.s-variation-default #header-container .header .nav ul li a {
+  font-family: gotham rounded, sans-serif
+}
+
+.s-variation-default .s-email-form input[type=text] {
+  font-family: sans-serif
+}
+
+.s-variation-default {
+  color: #333
+}
+
+.s-variation-default .s-title {
+  color: #333
+}
+
+.s-variation-default .s-subtitle {
+  color: #678
+}
+
+.s-variation-default .navbar-drawer-bar .navbar {
+  background-color: #333
+}
+
+.s-variation-default #header-container .header .nav ul a {
+  color: #678
+}
+
+.s-variation-default .s-section {
+  background-color: #fff
+}
+
+@media only screen and (min-width:1250px) {
+  .wide-container {
+    width: 92%
+  }
+
+  .wide-container .sixteen.columns {
+    margin: 0;
+    width: 100%
+  }
+
+  .s-email-form-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .s-email-form-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width:727px) {
+  #header-spacer {
+    height: 0
+  }
+
+  #header-container {
+    margin-left: 0 !important;
+    position: relative
+  }
+
+  #header-container .header .logo {
+    margin: 10px auto 0;
+    padding: 0 30px
+  }
+
+  #header-container .header .power {
+    bottom: -25px
+  }
+}
+
+#s-content.s-font-title-archivo-narrow .s-font-title {
+  font-family: "archivo narrow", helvetica, sans-serif
+}
+
+#s-content.s-font-heading-archivo-narrow .s-font-heading {
+  font-family: "archivo narrow", helvetica, sans-serif
+}
+
+.s-ratio-box iframe, .s-ratio-box img, .s-ratio-box video {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+s-image img, .s-media img {
+    max-width: 100%;
+  vertical-align: middle;
+}
