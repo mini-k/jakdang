@@ -86,23 +86,22 @@
     </script>
 
     <!-- Facebook Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '261327861393384');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=261327861393384&ev=PageView&noscript=1"
-    /></noscript>
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '261327861393384');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=261327861393384&ev=PageView&noscript=1"
+      /></noscript>
     <!-- End Facebook Pixel Code -->
-
 
   </head>
 
@@ -125,10 +124,11 @@
         <h1 class="small-screen-only">교육게임<br/>개발 노하우<br/>3주만에 마스터</h1>
         <h1 class="big-screen-only">교육게임 개발 노하우<br/>3주만에 마스터</h1>
 
-        <button class="CTA-to-form" id="checkOutButton" onclick="location.href='https://goo.gl/forms/qUUKXBuPgD2kOxDA2'" type="button">지금 신청하기</button>
+        <button class="CTA-to-form" id="checkOutButton"
+        onclick="window.open('https://goo.gl/forms/qUUKXBuPgD2kOxDA2', '_blank');" type="button">지금 신청하기</button>
         <!-- Facebook "Initiate Checkout" Event Tracking -->
         <script type="text/javascript">
-          $( '#checkOutButton' ).click(function() {
+          $( '#$checkOutButton' ).click(function() {
              fbq('track', 'InitiateCheckout', {
                value: 10,
                currency: 'USD',
