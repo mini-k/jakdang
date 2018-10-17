@@ -128,11 +128,12 @@
         onclick="window.open('https://goo.gl/forms/qUUKXBuPgD2kOxDA2', '_blank');" type="button">지금 신청하기</button>
         <!-- Facebook "Initiate Checkout" Event Tracking -->
         <script type="text/javascript">
-          $( '#$checkOutButton' ).click(function() {
+          $( '#checkOutButton' ).click(function() {
              fbq('track', 'InitiateCheckout', {
                value: 10,
                currency: 'USD',
              });
+             // alert('checkout');
            })
         </script>
         <!-- End Facebook "Initiate Checkout" Event Tracking -->
