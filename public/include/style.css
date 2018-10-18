@@ -3,7 +3,7 @@
 html, body {
   position: relative;
   background-color: #EDE7F1;
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Do Hyeon', 'Nanum Gothic', 'NanumGothic', '맑은 고딕', 'Malgun Gothic', '애플 SD 산돌고딕 Neo', 'Apple SD Gothic', sans-serif;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -22,7 +22,7 @@ img {
 
 button {
   border: 0;
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Do Hyeon', 'Nanum Gothic', 'NanumGothic', '맑은 고딕', 'Malgun Gothic', '애플 SD 산돌고딕 Neo', 'Apple SD Gothic', sans-serif;
 }
 
 
