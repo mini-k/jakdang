@@ -51,8 +51,7 @@ button {
   margin: 0 auto;
   color: white;
   text-align: center;
-  overflow-y: scroll;
-}
+ }
 
 .ribbon {
   width: 90%;
