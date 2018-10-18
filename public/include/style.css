@@ -47,7 +47,7 @@ button {
 }
 
 .page-container {
-  max-width: 700px;
+  max-width: 100%;
   margin: 0 auto;
   color: white;
   text-align: center;
@@ -83,12 +83,12 @@ button.CTA-to-form {
 
 
 .card-row {
-  width: 90%;
+  width: 80%;
   margin: 30px auto 0 auto;
 }
 
 .curriculum-mobile {
-  width: 94%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -100,7 +100,7 @@ button.CTA-to-form {
 
 /* Responsive - Mobile: Width Smaller Than 640px */
 
-@media only screen and (max-width:639px) {
+@media only screen and (max-width:767px) {
 
   .big-screen-only {
     display: none !important;
@@ -110,14 +110,14 @@ button.CTA-to-form {
 
 /* Responsive - Large: Width 640px or Bigger */
 
-@media only screen and (min-width:640px) {
+@media only screen and (min-width:768px) {
 
   .small-screen-only {
     display: none !important;
   }
 
   .ribbon {
-    width: 75%;
+    width: 500px;
     margin:60px auto 40px auto;
   }
 
@@ -137,7 +137,7 @@ button.CTA-to-form {
   }
 
   .card-row {
-    width: 100%;
+    width: 645px;
     margin: 70px auto 0 auto;
   }
 
