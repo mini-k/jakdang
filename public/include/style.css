@@ -54,7 +54,8 @@ button {
  }
 
 .ribbon {
-  width: 90%;
+  width: 60%;
+  min-width: 250px;
   height: auto;
   margin: 23px auto 20px auto;
 }
@@ -83,7 +84,8 @@ button.CTA-to-form {
 
 
 .card-row {
-  width: 80%;
+  width: 50%;
+  min-width: 280px;
   margin: 30px auto 0 auto;
 }
 
@@ -93,7 +95,8 @@ button.CTA-to-form {
 }
 
 .past-photos {
-  width: 90%;
+  width: 50%;
+  min-width: 280px;
   margin: 20px auto 40px auto;
   box-shadow: 0 0 20px 5px rgba(60, 21, 95, 0.5);
 }
