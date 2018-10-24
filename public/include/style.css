@@ -57,7 +57,7 @@ button {
   width: 60%;
   min-width: 250px;
   height: auto;
-  margin: 23px auto 20px auto;
+  margin: 30px auto 30px auto;
 }
 
 h1 {
@@ -73,7 +73,7 @@ button.CTA-to-form {
   border-radius: 3px;
   background-image: url("../img/CTA-Gradient-Yellow.jpg");
   background-size: cover;
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 10px 50px 8px 50px;
   text-decoration: none;
   color: #4C2605;
@@ -86,7 +86,7 @@ button.CTA-to-form {
 .card-row {
   width: 50%;
   min-width: 280px;
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .curriculum-mobile {
@@ -125,7 +125,7 @@ button.CTA-to-form {
   }
 
   h1 {
-    font-size: 90px;
+    font-size: 100px;
   }
 
   button.CTA-to-form {
