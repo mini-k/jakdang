@@ -78,7 +78,7 @@ button.CTA-to-form {
   text-decoration: none;
   color: #4C2605;
   font-size: 28px;
-  box-shadow: 0 0 20px 5px rgba(60, 21, 95, 0.9);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
   transition: all 0.3s;
 }
 
@@ -148,14 +148,20 @@ button.CTA-to-form {
     display: inline-block;
     width: 200px;
     margin-right: 15px;
-    box-shadow: 0 0 20px 5px rgba(60, 21, 95, 0.5);
+    box-shadow: 0 0 20px 5px rgba(60, 21, 95, 0.2);
   }
 
   .card-col:last-of-type {
     margin: 0;
   }
 
+  img.package {
+    width: 640px;
+    margin: 15px auto 0 auto;
+    box-shadow: 0 0 20px 5px rgba(60, 21, 95, 0.2);
+  }
+
   .past-photos {
     width: 640px;
-    margin: 30px auto 100px auto;
+    margin: 70px auto 100px auto;
   }
