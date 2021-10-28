@@ -1,0 +1,37 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3885671, 2020-04-01T01:19:04-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Gordita-Bold by Type Atelier
+ * URL: https://www.myfonts.com/fonts/type-atelier/gordita/bold/
+ * 
+ * Webfont: Gordita-Regular by Type Atelier
+ * URL: https://www.myfonts.com/fonts/type-atelier/gordita/regular/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2016 by THOMAS GILLETT. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b4a67");
+  
+@font-face {
+  src: url('webFonts/Gordita-Bold/font.eot');
+  font-family: 'Gordita-Bold';
+  src: url('webFonts/Gordita-Bold/font.woff2') format('woff2'), url('webFonts/Gordita-Bold/font.woff') format('woff'), url('webFonts/Gordita-Bold/font.eot?#iefix') format('embedded-opentype'), url('webFonts/Gordita-Bold/font.ttf') format('truetype');
+}
+@font-face {
+  src: url('webFonts/Gordita-Regular/font.eot');
+  font-family: 'Gordita-Regular';
+  src: url('webFonts/Gordita-Regular/font.woff2') format('woff2'), url('webFonts/Gordita-Regular/font.woff') format('woff'), url('webFonts/Gordita-Regular/font.eot?#iefix') format('embedded-opentype'), url('webFonts/Gordita-Regular/font.ttf') format('truetype');
+}
+

@@ -1,0 +1,846 @@
+@charset "utf-8";
+
+// VARIABLES --------------------
+
+// Set your brand colors
+$white: #fff;
+$black: #000;
+$gray1: #f9f9f9;
+$gray2: #f2f2f2;
+$gray3: #ebebeb;
+$gray4: #e2e2e2;
+$gray5: #d4d4d4;
+$gray6: #bbbbbb;
+$gray7: #959595;
+$gray8: #575757;
+$gray9: #353535;
+$gray10: #1a1a1a;
+
+$pink1: #ffccd6;
+$pink2: #ffb3c2;
+$pink3: #ff99ad;
+$pink4: #ff8099;
+$pink5: #f7607d;
+$pink6: #d95771;
+$pink7: #b3364f;
+$pink8: #8c1c32;
+$pink9: #660a1d;
+$pink10: #40000d;
+
+$orange1: #ffcdb6;
+$orange2: #ff9e70;
+$lime1: #f7fcd3;
+$lime2: #ebf4a8;
+$blue1: #8fa8ca;
+$blue2: #3a577e;
+$purple1: #b579df;
+$purple2: #5c2186;
+
+$grey-dark: $gray8;
+$grey-light: $gray2;
+$primary: $pink5;
+$link: $pink7;
+
+// Set font size
+$size-1l: 10rem;
+$size-1: 8.5rem;
+$size-1s: 7rem;
+$size-2l: 6rem;
+$size-2: 5rem;
+$size-2s: 4rem;
+$size-3l: 3.5rem;
+$size-3: 3rem;
+$size-3s: 2.5rem;
+$size-4l: 2rem;
+$size-4: 1.6rem;
+$size-4s: 1.4rem;
+$size-5l: 1.3rem;
+$size-5: 1.2rem;
+$size-5s: 1.1rem;
+$size-6l: 1.05rem;
+$size-6: 1rem;
+$size-6s: 0.9rem;
+$size-7l: 0.8rem;
+$size-7: 0.75rem;
+$size-7s: 0.7rem;
+
+// Set layout variables
+$column-gap: 1.5rem;
+$fullhd-enabled: true;
+
+// Update Bulma's global variables
+$family-sans-serif: "Noto Sans KR", sans-serif;
+$family-serif: "Nanum Myeongjo", serif;
+
+// Update Bulma's component variables
+$body-background-color: $black;
+$control-border-width: 2px;
+$input-border-color: $gray4;
+$input-shadow: none;
+
+// IMPORT --------------------
+
+// Import webfont CSS files
+// @import "../font/Gordita.css";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Noto+Sans+KR:wght@400;700&display=swap");
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+
+// GLOBAL MIXINS & CLASSES --------------------
+
+// Custom Mixins
+@mixin vertical-middle {
+  display: flex;
+  align-items: center;
+}
+@mixin stretch-vertical {
+  display: flex !important;
+  align-items: stretch;
+}
+@mixin text-serif {
+  font-family: $family-serif;
+  font-weight: 700;
+}
+@mixin text-weight-regular {
+  font-family: $family-sans-serif !important;
+  font-weight: normal !important;
+}
+@mixin text-weight-bold {
+  font-weight: bold !important;
+}
+@mixin tight-horizontal-column {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  @include from($tablet) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@mixin tight-vertical-column {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  @include from($tablet) {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+}
+@mixin relative-w100-h100 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+@mixin absolute-w100-h100 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@mixin absolute-t0-l0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@mixin absolute-b0-l0 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@mixin img-w100-hauto {
+  width: 100%;
+  height: auto;
+}
+@mixin headline {
+  color: $white;
+  @include text-serif();
+  text-align: center;
+}
+
+// Set Root font size
+html {
+  /* font size for html = 1rem */
+  /* 100% means 16px by default */
+  /* 1vw = 1% of screen width */
+  /* mobile-first media query */
+
+  // mobile rem = 14.72px
+  font-size: 92%;
+  @include from($tablet) {
+    // tablet rem = 15.2px
+    font-size: 95%;
+  }
+  @include from($desktop) {
+    // desktop rem = 16px
+    font-size: 100%;
+  }
+  /* override elements that don't inherit */
+  button {
+    font-size: inherit;
+  }
+  input {
+    font-size: inherit;
+  }
+  // Korean word break
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+// Display wireframe
+/* .section {
+  border: 1px dotted $gray6;
+}
+.container {
+  border: 1px dotted $gray5;
+}
+.column {
+  border: 1px dotted $gray4;
+}
+.column-fill {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+figure {
+  background-color: $gray4;
+}
+figure img {
+  background-color: $gray5;
+} */
+
+// Update or create global classes
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column-fill {
+  display: flex;
+}
+figure,
+figure img,
+img {
+  width: 100%;
+  height: 100%;
+}
+.button {
+  cursor: pointer;
+}
+.button.is-large {
+  font-size: $size-4 !important;
+}
+strong,
+.strong {
+  @include text-weight-bold();
+}
+.emphasis {
+  color: $white;
+}
+.stretch-vertical {
+  display: flex !important;
+  align-items: stretch;
+}
+.is-vertical-middle {
+  display: flex;
+  align-items: center;
+}
+
+.tight-columns {
+  margin-left: 0;
+  margin-right: 0;
+  @include from($tablet) {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}
+.website-headline {
+  @include headline();
+  margin: 0 auto;
+  line-height: 1.2;
+  text-shadow: 0 0.5em 0 $black;
+  .big {
+    font-size: $size-3l;
+  }
+  .small {
+    font-size: $size-3s;
+  }
+  @include from($tablet) {
+    .big {
+      font-size: $size-2;
+    }
+    .small {
+      font-size: $size-3s;
+    }
+  }
+  @include from($desktop) {
+    .big {
+      font-size: $size-1;
+    }
+    .small {
+      font-size: $size-3l;
+    }
+  }
+}
+.section-name {
+  margin-bottom: 1.5rem;
+  @include headline();
+  font-size: $size-3;
+  line-height: 1.2;
+  @include from($tablet) {
+    font-size: $size-2;
+  }
+  @include from($desktop) {
+    font-size: $size-2s;
+  }
+}
+.section-description {
+  margin-bottom: 2rem;
+  color: $gray6;
+  font-size: $size-5;
+  line-height: 1.5;
+  text-align: center;
+  @include from($tablet) {
+    font-size: $size-4s;
+  }
+  @include from($desktop) {
+    font-size: $size-4;
+  }
+}
+.category-name {
+  margin-bottom: 1.5rem;
+  font-size: $size-4l;
+  line-height: 1.2;
+  @include text-serif();
+  @include from($tablet) {
+    font-size: $size-3s;
+  }
+  @include from($desktop) {
+    font-size: $size-3;
+  }
+}
+.cta-main {
+  @include text-weight-bold();
+  @include from($tablet) {
+  }
+  @include from($desktop) {
+  }
+}
+.button.is-large {
+  font-size: $size-4l;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 0.25em;
+  @include from($tablet) {
+  }
+  @include from($desktop) {
+  }
+}
+
+// SECTIONS --------------------
+
+// Style Navbar
+.navbar {
+  padding: 0 1rem;
+  background-color: transparent;
+  @include absolute-t0-l0();
+  .navbar-item {
+    padding: 0;
+  }
+  .logo {
+    box-shadow: 0 0.8rem 1rem $black;
+  }
+  .logo img {
+    max-height: 3.25rem;
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+  @include from($tablet) {
+    .container {
+      max-width: 100%;
+    }
+    .logo {
+      padding: 0;
+    }
+    .logo img {
+      max-height: 4rem;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  @include from($desktop) {
+    padding: 0 3rem;
+    .logo img {
+      max-height: 6.25rem;
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+  }
+}
+
+// Style Hero
+.hero {
+  height: 39rem;
+  background-image: url(../img/background/forrest.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  .hero-body {
+    padding-top: 0;
+  }
+  .website-headline {
+    margin-top: 5rem;
+  }
+  .down-arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .characters {
+    @include relative-w100-h100();
+    img {
+      position: absolute;
+      height: auto;
+      bottom: 0;
+      left: 50%;
+    }
+    .castle {
+      width: 14rem;
+      margin-left: -18em;
+      bottom: 26%;
+      transform: rotate(-11deg);
+      opacity: 0.8;
+    }
+    .wizard {
+      width: 6rem;
+      margin-left: -14em;
+      bottom: 35%;
+      transform: rotate(-10deg);
+    }
+    .gam {
+      width: 14rem;
+      margin-left: -12rem;
+      bottom: 5%;
+      transform: rotate(3deg);
+    }
+    .knight {
+      width: 18rem;
+      margin-left: 16rem;
+      bottom: 14%;
+      transform: rotate(7deg);
+      opacity: 0.8;
+    }
+    .chasa {
+      width: 14rem;
+      margin-left: 0rem;
+      bottom: 25%;
+      transform: rotate(-2deg);
+    }
+    .man {
+      width: 7rem;
+      margin-left: 5rem;
+      bottom: 23%;
+      transform: rotate(6deg);
+    }
+    .ahreum {
+      width: 20rem;
+      margin-left: -10rem;
+    }
+  }
+  @include from($tablet) {
+    height: 50rem;
+    .website-headline {
+      margin-top: 8rem;
+    }
+  }
+  @include from($desktop) {
+    height: 80rem;
+    .down-arrow {
+      //margin-top: 2rem;
+    }
+    .characters {
+      .castle {
+        width: 26rem;
+        margin-left: -35em;
+        bottom: 35%;
+        transform: rotate(-11deg);
+        opacity: 0.9;
+      }
+      .toilet {
+        width: 20rem;
+        margin-left: -40em;
+        bottom: 20%;
+        transform: rotate(-6deg);
+      }
+      .wizard {
+        width: 12rem;
+        margin-left: -40em;
+        bottom: 9%;
+        transform: rotate(-10deg);
+      }
+      .gam {
+        width: 26rem;
+        margin-left: -31rem;
+        transform: rotate(3deg);
+      }
+      .knight {
+        width: 18rem;
+        margin-left: 26rem;
+        bottom: 14%;
+        transform: rotate(7deg);
+        opacity: 0.8;
+      }
+      .chasa {
+        width: 26rem;
+        margin-left: 9rem;
+        bottom: 17%;
+        transform: rotate(-2deg);
+      }
+      .palace {
+        width: 28rem;
+        margin-left: 14rem;
+        bottom: 7%;
+        transform: rotate(6deg);
+      }
+      .man {
+        width: 13rem;
+        margin-left: 17rem;
+        bottom: 23%;
+        transform: rotate(6deg);
+      }
+      .ahreum {
+        width: 44rem;
+        margin-left: -22rem;
+      }
+    }
+    .castle {
+      animation: ani-Ls 2s infinite ease-in-out;
+    }
+    .toilet {
+      animation: ani-Ls 1.5s infinite ease-in-out;
+    }
+    .wizard {
+      animation: ani-Lu 1.5s infinite ease-in-out;
+    }
+    .gam {
+      animation: ani-Rm 3s infinite ease-in-out;
+    }
+    .knight {
+      animation: ani-Rl 4s infinite ease-in-out;
+    }
+    .chasa {
+      animation: ani-Ls 2.5s infinite ease-in-out;
+    }
+    .palace {
+      animation: ani-Rs 4s infinite ease-in-out;
+    }
+    .man {
+      animation: ani-Ru 2s infinite ease-in-out;
+    }
+  }
+  @keyframes ani-Rs {
+    0% {
+      transform: rotate(6deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(6deg);
+    }
+  }
+  @keyframes ani-Rm {
+    0% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(8deg);
+    }
+    100% {
+      transform: rotate(9deg);
+    }
+  }
+  @keyframes ani-Rl {
+    0% {
+      transform: rotate(13deg);
+    }
+    50% {
+      transform: rotate(12deg);
+    }
+    100% {
+      transform: rotate(13deg);
+    }
+  }
+  @keyframes ani-Ru {
+    0% {
+      transform: matrix(0.99, 0.14, -0.14, 0.99, 0, -6);
+    }
+    50% {
+      transform: matrix(0.98, 0.17, -0.17, 0.98, 0, 0);
+    }
+    100% {
+      transform: matrix(0.99, 0.14, -0.14, 0.99, 0, -6);
+    }
+  }
+  @keyframes ani-Ls {
+    0% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(-4deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+  @keyframes ani-Lm {
+    0% {
+      transform: rotate(-12deg);
+    }
+    50% {
+      transform: rotate(-11deg);
+    }
+    100% {
+      transform: rotate(-12deg);
+    }
+  }
+  @keyframes ani-Lu {
+    0% {
+      transform: matrix(0.98, -0.17, 0.17, 0.98, 0, -6);
+    }
+    50% {
+      transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+    }
+    100% {
+      transform: matrix(0.98, -0.17, 0.17, 0.98, 0, -6);
+    }
+  }
+}
+
+// Style Intro Section
+.intro {
+  margin: 0 0 4rem 0;
+  text-align: center;
+  .game-format {
+    margin-top: 3rem;
+    .column {
+      @include tight-vertical-column();
+    }
+    .column-fill {
+      display: block;
+      margin: 0 auto;
+    }
+    .board img {
+      width: 50%;
+    }
+    .AR img {
+      width: 75%;
+    }
+  }
+  @include from($tablet) {
+    margin: 3rem 0 5rem 0;
+    .game-format {
+      .board img {
+        width: 10rem;
+      }
+      .AR img {
+        width: 20rem;
+      }
+    }
+  }
+  @include from($desktop) {
+    margin: 3rem 0 6rem 0;
+    .game-format {
+      margin-top: -0.5rem;
+    }
+  }
+}
+
+.media {
+  background-color: $white;
+  text-align: center;
+  .category-name {
+    margin: 3rem auto 1rem auto;
+    text-align: center;
+    color: $gray10;
+  }
+  .media-column {
+    @include tight-horizontal-column();
+  }
+  .logo {
+    display: block;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+    max-height: 4rem;
+    margin: 0 auto;
+  }
+  .press-row {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid $gray3;
+    &.first {
+      margin-top: 1rem;
+    }
+    &.last {
+      margin-bottom: 3rem;
+    }
+  }
+  .article {
+    text-align: left;
+    color: $gray6;
+    font-size: $size-6;
+    &:hover {
+      color: $pink4;
+      text-decoration: underline;
+    }
+  }
+  @include from($tablet) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .press-row {
+      width: 90%;
+    }
+    .article {
+      font-size: $size-5;
+    }
+    .logo.tall {
+      max-height: 4rem;
+    }
+  }
+  @include from($desktop) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    .press-row {
+      width: 60%;
+    }
+    .article {
+      font-size: $size-4s;
+    }
+    .logo.tall {
+      max-height: 6rem;
+    }
+  }
+}
+
+// Style Portfolio
+.portfolio {
+  padding: 8rem 0;
+  @include from($tablet) {
+  }
+  @include from($desktop) {
+  }
+}
+
+// Style About Section
+.about {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  .image {
+    position: relative;
+    width: 80%;
+    background-color: $gray2;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 2rem auto;
+    .photo {
+      position: absolute;
+      max-width: 1200px;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  .column-fill {
+    width: 100%;
+  }
+  .text {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .my-name {
+    width: 100%;
+    font-size: $size-3;
+    @include text-serif();
+    color: $gray1;
+    margin-left: -0.5rem;
+    text-align: center;
+  }
+  .my-mission {
+    line-height: 1.5;
+  }
+  @include from($tablet) {
+    padding-bottom: 8rem;
+    .image {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .text {
+      margin-left: 3rem;
+    }
+    .my-name {
+      font-size: $size-2s;
+      text-align: left;
+    }
+    .my-mission {
+      font-size: $size-6;
+      text-align: left;
+    }
+  }
+  @include from($desktop) {
+    .my-mission {
+      font-size: $size-5l;
+    }
+  }
+  @include from($widescreen) {
+    .my-mission {
+      font-size: $size-4;
+    }
+  }
+}
+
+// Style Bottom CTA
+.bottom {
+  //border-top: 1px dotted $pink10;
+  padding-top: 6rem;
+  padding-bottom: 16rem;
+  background-image: url(../img/background/stairs.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .website-headline {
+    margin-bottom: 2rem;
+  }
+  @include from($tablet) {
+  }
+  @include from($desktop) {
+    padding-top: 16rem;
+    padding-bottom: 30rem;
+  }
+}
+
+// Style Footer
+.footer {
+  background-color: $gray10;
+  p {
+    margin-top: 0.3rem;
+  }
+  a,
+  a:visited {
+    color: $pink7;
+  }
+  a:hover {
+    color: $pink3;
+  }
+  @include from($tablet) {
+  }
+  @include from($desktop) {
+  }
+}
