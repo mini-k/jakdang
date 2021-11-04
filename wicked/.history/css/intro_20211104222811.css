@@ -1,0 +1,44 @@
+.intro {
+  margin: 0;
+  text-align: center;
+  padding: 5rem 0;
+}
+/* .intro .section-name {
+  font-size: 2.5rem;
+} */
+.intro .section-description {
+  font-size: 1rem;
+  padding: 0 3rem;
+}
+.button.is-large.cta-main {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 769px) {
+  .intro {
+    padding: 6.5rem 0;
+  }
+  /* .intro .section-name {
+    font-size: 4rem;
+  } */
+  .intro .section-description {
+    font-size: 1.3rem;
+  }
+  .button.is-large.cta-main {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section.intro {
+    padding: 12.5rem 0;
+    /* margin: 8.75rem 0; */
+  }
+  /* .intro .section-name {
+    font-size: 5rem;
+  } */
+  /* .intro .section-description {
+    font-size: 1.5rem;
+  } */
+  .button.is-large.cta-main {
+    font-size: 1.9rem;
+  }
+}

@@ -10483,23 +10483,55 @@ strong,
   }
 }
 
+.website-headline {
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.2;
+  text-shadow: 0 0.5em 0 #000;
+}
+.website-headline .big {
+  font-size: 3rem;
+}
+.website-headline .small {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 769px) {
+  .website-headline .big {
+    font-size: 5rem;
+  }
+  .website-headline .small {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .website-headline .big {
+    font-size: 7rem;
+  }
+  .website-headline .small {
+    font-size: 3rem;
+  }
+}
+
 .section-name {
   margin-bottom: 1.5rem;
   color: #1a1a1a;
   font-family: "Nanum Myeongjo", serif;
   font-weight: 700;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.2;
 }
 @media screen and (min-width: 769px) {
   .section-name {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .section-name {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 

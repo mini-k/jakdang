@@ -1,0 +1,429 @@
+.hero {
+    height: 40rem;
+}
+.website-headline .big {
+    font-size: 3rem;
+}
+.website-headline .small {
+    font-size: 1.5rem;
+}
+
+.hero .hero-body {
+    padding-top: 0;
+}
+.hero .website-headline {
+    margin-top: 5rem;
+}
+.hero .down-arrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+.hero .characters {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.hero .characters img {
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    left: 50%;
+}
+.hero .characters .castle {
+    width: 10rem;
+    margin-left: -11em;
+    bottom: 40%;
+    transform: rotate(-11deg);
+    opacity: 0.8;
+}
+.hero .characters .wizard {
+    width: 4rem;
+    margin-left: -11em;
+    bottom: 43%;
+    transform: rotate(-10deg);
+}
+.hero .characters .gam {
+    width: 10rem;
+    margin-left: -11rem;
+    bottom: 5%;
+    transform: rotate(3deg);
+}
+.hero .characters .knight {
+    width: 18rem;
+    margin-left: 16rem;
+    bottom: 14%;
+    transform: rotate(7deg);
+    opacity: 0.8;
+}
+.hero .characters .chasa {
+    width: 11rem;
+    margin-left: -1rem;
+    bottom: 25%;
+    transform: rotate(-2deg);
+}
+.hero .characters .man {
+    width: 6rem;
+    margin-left: 4rem;
+    bottom: 20%;
+    transform: rotate(6deg);
+}
+.hero .characters .ahreum {
+    width: 18rem;
+    margin-left: -10rem;
+}
+.website-headline {
+    color: #fff;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
+    text-shadow: 0 0.5em 0 #000;
+}
+
+
+@media screen and (min-width: 426px) {
+    .hero {
+        height: 45rem;
+    }
+    .website-headline .big {
+        font-size: 4rem;
+    }
+    .website-headline .small {
+        font-size: 2rem;
+    }
+    .hero .characters .castle {
+        width: 12rem;
+        margin-left: -14em;
+        bottom: 26%;
+        transform: rotate(-11deg);
+        opacity: 0.8;
+    }
+    .hero .characters .wizard {
+        width: 5rem;
+        margin-left: -13em;
+        bottom: 35%;
+        transform: rotate(-10deg);
+    }
+    .hero .characters .gam {
+        width: 12rem;
+        margin-left: -12rem;
+        bottom: 5%;
+        transform: rotate(3deg);
+    }
+    .hero .characters .knight {
+        width: 18rem;
+        margin-left: 16rem;
+        bottom: 14%;
+        transform: rotate(7deg);
+        opacity: 0.8;
+    }
+    .hero .characters .chasa {
+        width: 13rem;
+        margin-left: 0rem;
+        bottom: 25%;
+        transform: rotate(-2deg);
+    }
+    .hero .characters .man {
+        width: 7rem;
+        margin-left: 5rem;
+        bottom: 23%;
+        transform: rotate(6deg);
+    }
+    .hero .characters .ahreum {
+        width: 20rem;
+        margin-left: -10rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hero {
+        height: 50rem;
+    }
+    .hero .website-headline {
+        margin-top: 8rem;
+    }
+    .hero .down-arrow {
+        width: 40px;
+        height: 40px;
+        margin: 2rem auto 3rem auto;
+    }
+    .website-headline .big {
+        font-size: 8.5rem;
+    }
+    .website-headline .small {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hero {
+        height: 85rem;
+    }
+    .hero .down-arrow {
+        width: 40px;
+        height: 40px;
+        margin: 2rem auto 4rem auto;
+    }
+    .hero .characters .castle {
+        width: 20rem;
+        margin-left: -27em;
+        bottom: 35%;
+        transform: rotate(-11deg);
+        opacity: 0.9;
+    }
+    .hero .characters .toilet {
+        width: 16rem;
+        margin-left: -33em;
+        bottom: 20%;
+        transform: rotate(-6deg);
+    }
+    .hero .characters .wizard {
+        width: 8rem;
+        margin-left: -32em;
+        bottom: 9%;
+        transform: rotate(-10deg);
+    }
+    .hero .characters .gam {
+        width: 22rem;
+        margin-left: -27rem;
+        transform: rotate(3deg);
+    }
+    .hero .characters .knight {
+        width: 14rem;
+        margin-left: 15rem;
+        bottom: 14%;
+        transform: rotate(7deg);
+        opacity: 0.8;
+    }
+    .hero .characters .chasa {
+        width: 22rem;
+        margin-left: 2rem;
+        bottom: 22%;
+        transform: rotate(-2deg);
+    }
+    .hero .characters .palace {
+        width: 24rem;
+        margin-left: 7rem;
+        bottom: 7%;
+        transform: rotate(6deg);
+    }
+    .hero .characters .man {
+        width: 9rem;
+        margin-left: 12rem;
+        bottom: 23%;
+        transform: rotate(6deg);
+    }
+    .hero .characters .ahreum {
+        width: 40rem;
+        margin-left: -22rem;
+    }
+    .hero .castle {
+        animation: ani-Ls 2s infinite ease-in-out;
+    }
+    .hero .toilet {
+        animation: ani-Ls 1.5s infinite ease-in-out;
+    }
+    .hero .wizard {
+        animation: ani-Lu 1.5s infinite ease-in-out;
+    }
+    .hero .gam {
+        animation: ani-Rm 3s infinite ease-in-out;
+    }
+    .hero .knight {
+        animation: ani-Rl 4s infinite ease-in-out;
+    }
+    .hero .chasa {
+        animation: ani-Ls 2.5s infinite ease-in-out;
+    }
+    .hero .palace {
+        animation: ani-Rs 4s infinite ease-in-out;
+    }
+    .hero .man {
+        animation: ani-Ru 2s infinite ease-in-out;
+    }
+    .website-headline .big {
+        font-size: 9.375rem;
+    }
+    .website-headline .small {
+        font-size: 3.75rem;
+    }
+}
+@media screen and (min-width: 1216px) {
+    .hero {
+        height: 85rem;
+    }
+    .hero .down-arrow {
+        margin: 2rem auto 5rem auto;
+        width: 50px;
+        height: 50px;
+    }
+    .hero .characters .castle {
+        width: 26rem;
+        margin-left: -35em;
+        bottom: 35%;
+        transform: rotate(-11deg);
+        opacity: 0.9;
+    }
+    .hero .characters .toilet {
+        width: 20rem;
+        margin-left: -40em;
+        bottom: 20%;
+        transform: rotate(-6deg);
+    }
+    .hero .characters .wizard {
+        width: 12rem;
+        margin-left: -40em;
+        bottom: 9%;
+        transform: rotate(-10deg);
+    }
+    .hero .characters .gam {
+        width: 26rem;
+        margin-left: -31rem;
+        transform: rotate(3deg);
+    }
+    .hero .characters .knight {
+        width: 18rem;
+        margin-left: 23rem;
+        bottom: 14%;
+        transform: rotate(7deg);
+        opacity: 0.8;
+    }
+    .hero .characters .chasa {
+        width: 26rem;
+        margin-left: 6rem;
+        bottom: 17%;
+        transform: rotate(-2deg);
+    }
+    .hero .characters .palace {
+        width: 28rem;
+        margin-left: 12rem;
+        bottom: 7%;
+        transform: rotate(6deg);
+    }
+    .hero .characters .man {
+        width: 13rem;
+        margin-left: 15rem;
+        bottom: 23%;
+        transform: rotate(6deg);
+    }
+    .hero .characters .ahreum {
+        width: 44rem;
+        margin-left: -22rem;
+    }
+    .hero .castle {
+        animation: ani-Ls 2s infinite ease-in-out;
+    }
+    .hero .toilet {
+        animation: ani-Ls 1.5s infinite ease-in-out;
+    }
+    .hero .wizard {
+        animation: ani-Lu 1.5s infinite ease-in-out;
+    }
+    .hero .gam {
+        animation: ani-Rm 3s infinite ease-in-out;
+    }
+    .hero .knight {
+        animation: ani-Rl 4s infinite ease-in-out;
+    }
+    .hero .chasa {
+        animation: ani-Ls 2.5s infinite ease-in-out;
+    }
+    .hero .palace {
+        animation: ani-Rs 4s infinite ease-in-out;
+    }
+    .hero .man {
+        animation: ani-Ru 2s infinite ease-in-out;
+    }
+    .website-headline .big {
+        font-size: 9.375rem;
+    }
+    .website-headline .small {
+        font-size: 3.75rem;
+    }​
+}
+@keyframes ani-Rs {
+    0% {
+        transform: rotate(6deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(6deg);
+    }
+}
+
+@keyframes ani-Rm {
+    0% {
+        transform: rotate(9deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    100% {
+        transform: rotate(9deg);
+    }
+}
+
+@keyframes ani-Rl {
+    0% {
+        transform: rotate(13deg);
+    }
+    50% {
+        transform: rotate(12deg);
+    }
+    100% {
+        transform: rotate(13deg);
+    }
+}
+
+@keyframes ani-Ru {
+    0% {
+        transform: matrix(0.99, 0.14, -0.14, 0.99, 0, -6);
+    }
+    50% {
+        transform: matrix(0.98, 0.17, -0.17, 0.98, 0, 0);
+    }
+    100% {
+        transform: matrix(0.99, 0.14, -0.14, 0.99, 0, -6);
+    }
+}
+
+@keyframes ani-Ls {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(-4deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes ani-Lm {
+    0% {
+        transform: rotate(-12deg);
+    }
+    50% {
+        transform: rotate(-11deg);
+    }
+    100% {
+        transform: rotate(-12deg);
+    }
+}
+
+@keyframes ani-Lu {
+    0% {
+        transform: matrix(0.98, -0.17, 0.17, 0.98, 0, -6);
+    }
+    50% {
+        transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+    }
+    100% {
+        transform: matrix(0.98, -0.17, 0.17, 0.98, 0, -6);
+    }
+}

@@ -1,60 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;700&display=swap");
 
-@import url("navbar.css");
-@import url("hero.css");
-@import url("intro.css");
-@import url("media.css");
-@import url("portfolio-menu.css");
-@import url("portfolio.css");
-@import url("about.css");
-@import url("bottom.css");
-@import url("footer.css");
-
-:root {
-  /* font */
-  --family-sans-serif: "Noto Sans KR", sans-serif;
-  --family-serif: "Nanum Myeongjo", serif;
-
-  /* color */
-  --white: #fff;
-  --black: #000;
-  --gray1: #f9f9f9;
-  --gray2: #f2f2f2;
-  --gray3: #ebebeb;
-  --gray4: #e2e2e2;
-  --gray5: #d4d4d4;
-  --gray6: #bbbbbb;
-  --gray7: #959595;
-  --gray8: #575757;
-  --gray9: #353535;
-  --gray10: #1a1a1a;
-
-  --pink1: #ffccd6;
-  --pink2: #ffb2c2;
-  --pink3: #ff99ad;
-  --pink4: #ff8099;
-  --pink5: #f7607d;
-  --pink6: #d95771;
-  --pink7: #b2364f;
-  --pink8: #8c1c32;
-  --pink9: #660a1d;
-  --pink10: #40000d;
-
-  --orange1: #ffcdb6;
-  --orange2: #ff9e70;
-  --green1: #f7fcd3;
-  --green2: #ebf4a8;
-  --blue1: #8fa8ca;
-  --blue2: #3a577e;
-  --purple1: #b579df;
-  --purple2: #5c2186;
-
-  --grey-dark: $gray8;
-  --grey-light: $gray2;
-  --primary: $pink5;
-  --link: $pink7;
-}
-
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -5862,6 +5807,145 @@ a.list-item {
   }
 }
 
+.portfolio-menu {
+  /* background-image: url("../img/background/portfolio-menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  padding: 3rem 0 0 0 !important;
+  height: 20rem;
+}
+.portfolio-menu-bg {
+  position: absolute;
+  height: auto;
+}
+.text-on-portfolio-menu {
+  position: relative;
+  top: 20%;
+  left: 0;
+}
+.portfolio-menu .columns {
+  margin: 0 auto;
+  text-align: center;
+}
+.portfolio-menu .columns .column {
+  padding: 0 1rem;
+}
+.portfolio-menu .columns h2 {
+  color: #ffffff;
+  font-family: "Nanum Myeongjo", serif;
+  text-decoration: underline #b579df;
+  text-underline-position: from-font;
+  transition: all 0.5s;
+  font-size: 1.25rem;
+}
+.portfolio-menu .column:hover h2 {
+  color: #ebf4a8;
+  text-decoration: underline #ebf4a8;
+}
+.portfolio-menu .columns p {
+  color: #b579df;
+  margin-top: 1rem;
+  transition: all 0.5s;
+  font-size: 0.65rem;
+}
+.portfolio-menu .column:hover p {
+  color: #ebf4a8;
+}
+.portfolio-menu .columns img {
+  width: 20%;
+  height: 20%;
+  margin-top: 1rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.portfolio-menu .column:hover img {
+  opacity: 1;
+}
+
+
+.portfolio-menu .section-name {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.portfolio-menu .section-name {
+  font-size: 2.5rem;
+}
+.portfolio-menu .section-description {
+  color: #353535;
+}
+@media screen and (min-width: 426px) {
+  .portfolio-menu {
+    height: 21.5rem;
+  }
+  .portfolio-menu .columns {
+    flex-direction: row;
+  }
+  .portfolio-menu .section-name {
+    font-size: 2.5rem;
+  }
+  .portfolio-menu .columns h2 {
+    font-size: 1.5rem;
+  }
+  .portfolio-menu .columns p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .portfolio-menu {
+    padding: 3rem 0 0 0 !important;
+    height: 23rem;
+  }
+  .portfolio-menu .columns {
+    flex-direction: row;
+  }
+  .portfolio-menu .section-name {
+    font-size: 3rem;
+  }
+  .portfolio-menu .columns h2 {
+    font-size: 2rem;
+  }
+  .portfolio-menu .columns p {
+    font-size: 1rem;
+  }​
+}
+@media screen and (min-width: 1024px) {
+  .portfolio-menu {
+    padding: 0 !important;
+    height: 30rem;
+  }
+  .portfolio-menu .columns {
+    flex-direction: row;
+  }
+  .portfolio-menu .section-name {
+    font-size: 4rem;
+  }
+  .portfolio-menu .columns h2 {
+    font-size: 2.5rem;
+  }
+  .portfolio-menu .columns p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .portfolio-menu {
+    padding: 0rem !important;
+    height: 35rem;
+  }
+  .portfolio-menu .columns {
+    flex-direction: row;
+    margin: 0 15rem;
+  }
+  .portfolio-menu .section-name {
+    font-size: 5rem;
+  }
+  .portfolio-menu .columns h2 {
+    font-size: 3rem;
+  }
+  .portfolio-menu .columns p {
+    font-size: 1.1rem;
+  }
+}
+
 .menu {
   font-size: 1rem;
 }
@@ -6173,7 +6257,7 @@ a.list-item {
 }
 
 .navbar {
-  background-color: var(--black);
+  background-color: #fff;
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -7730,7 +7814,7 @@ label.panel-block:hover {
 }
 
 .hero {
-  background-color: var(--black);
+  background-color: $pink7;
   align-items: stretch;
   display: flex;
   flex-direction: column;
@@ -10483,23 +10567,55 @@ strong,
   }
 }
 
+.website-headline {
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.2;
+  text-shadow: 0 0.5em 0 #000;
+}
+.website-headline .big {
+  font-size: 3rem;
+}
+.website-headline .small {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 769px) {
+  .website-headline .big {
+    font-size: 5rem;
+  }
+  .website-headline .small {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .website-headline .big {
+    font-size: 7rem;
+  }
+  .website-headline .small {
+    font-size: 3rem;
+  }
+}
+
 .section-name {
   margin-bottom: 1.5rem;
   color: #1a1a1a;
   font-family: "Nanum Myeongjo", serif;
   font-weight: 700;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.2;
 }
 @media screen and (min-width: 769px) {
   .section-name {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .section-name {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -10544,9 +10660,1305 @@ strong,
   background-image: linear-gradient(155deg, #ff9c82, #fd1a67);
 }
 
+
 .button.is-large {
   /* font-size: 2rem; */
   padding-left: 1.5em;
   padding-right: 1.5em;
   border-radius: 0.25em;
+}
+
+.navbar {
+  padding: 0 1rem;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.navbar .navbar-item {
+  padding: 0;
+}
+.navbar .logo {
+  box-shadow: 0 0.8rem 1rem #000;
+}
+.navbar .logo img {
+  max-height: 3.25rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  background-image: linear-gradient(150deg, #ff9c82, #fd1a67);
+}
+@media screen and (min-width: 769px) {
+  .navbar .container {
+    max-width: 100%;
+  }
+  .navbar .logo {
+    padding: 0;
+  }
+  .navbar .logo img {
+    max-height: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 0 3rem;
+  }
+  .navbar .logo img {
+    max-height: 6.25rem;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+
+.hero {
+  height: 45rem;
+}
+.hero .hero-body {
+  padding-top: 0;
+}
+.hero .website-headline {
+  margin-top: 5rem;
+}
+.hero .down-arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+.hero .characters {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hero .characters img {
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  left: 50%;
+}
+.hero .characters .castle {
+  width: 12rem;
+  margin-left: -14em;
+  bottom: 26%;
+  transform: rotate(-11deg);
+  opacity: 0.8;
+}
+.hero .characters .wizard {
+  width: 5rem;
+  margin-left: -13em;
+  bottom: 35%;
+  transform: rotate(-10deg);
+}
+.hero .characters .gam {
+  width: 12rem;
+  margin-left: -12rem;
+  bottom: 5%;
+  transform: rotate(3deg);
+}
+.hero .characters .knight {
+  width: 18rem;
+  margin-left: 16rem;
+  bottom: 14%;
+  transform: rotate(7deg);
+  opacity: 0.8;
+}
+.hero .characters .chasa {
+  width: 13rem;
+  margin-left: 0rem;
+  bottom: 25%;
+  transform: rotate(-2deg);
+}
+.hero .characters .man {
+  width: 7rem;
+  margin-left: 5rem;
+  bottom: 23%;
+  transform: rotate(6deg);
+}
+.hero .characters .ahreum {
+  width: 20rem;
+  margin-left: -10rem;
+}
+@media screen and (max-width: 425px) {
+  .hero {
+    height: 40rem;
+  }
+  .hero .characters .castle {
+    width: 10rem;
+    margin-left: -11em;
+    bottom: 40%;
+    transform: rotate(-11deg);
+    opacity: 0.8;
+  }
+  .hero .characters .wizard {
+    width: 4rem;
+    margin-left: -11em;
+    bottom: 43%;
+    transform: rotate(-10deg);
+  }
+  .hero .characters .gam {
+    width: 10rem;
+    margin-left: -11rem;
+    bottom: 5%;
+    transform: rotate(3deg);
+  }
+  .hero .characters .knight {
+    width: 18rem;
+    margin-left: 16rem;
+    bottom: 14%;
+    transform: rotate(7deg);
+    opacity: 0.8;
+  }
+  .hero .characters .chasa {
+    width: 11rem;
+    margin-left: -1rem;
+    bottom: 25%;
+    transform: rotate(-2deg);
+  }
+  .hero .characters .man {
+    width: 6rem;
+    margin-left: 4rem;
+    bottom: 20%;
+    transform: rotate(6deg);
+  }
+  .hero .characters .ahreum {
+    width: 18rem;
+    margin-left: -10rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    height: 50rem;
+  }
+  .hero .website-headline {
+    margin-top: 8rem;
+  }
+  .hero .down-arrow {
+    width: 40px;
+    height: 40px;
+    margin: 2rem auto 3rem auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 85rem;
+  }
+  .hero .down-arrow {
+    width: 40px;
+    height: 40px;
+    margin: 2rem auto 4rem auto;
+  }
+  .hero .characters .castle {
+    width: 20rem;
+    margin-left: -27em;
+    bottom: 35%;
+    transform: rotate(-11deg);
+    opacity: 0.9;
+  }
+  .hero .characters .toilet {
+    width: 16rem;
+    margin-left: -33em;
+    bottom: 20%;
+    transform: rotate(-6deg);
+  }
+  .hero .characters .wizard {
+    width: 8rem;
+    margin-left: -32em;
+    bottom: 9%;
+    transform: rotate(-10deg);
+  }
+  .hero .characters .gam {
+    width: 22rem;
+    margin-left: -27rem;
+    transform: rotate(3deg);
+  }
+  .hero .characters .knight {
+    width: 14rem;
+    margin-left: 15rem;
+    bottom: 14%;
+    transform: rotate(7deg);
+    opacity: 0.8;
+  }
+  .hero .characters .chasa {
+    width: 22rem;
+    margin-left: 2rem;
+    bottom: 22%;
+    transform: rotate(-2deg);
+  }
+  .hero .characters .palace {
+    width: 24rem;
+    margin-left: 7rem;
+    bottom: 7%;
+    transform: rotate(6deg);
+  }
+  .hero .characters .man {
+    width: 9rem;
+    margin-left: 12rem;
+    bottom: 23%;
+    transform: rotate(6deg);
+  }
+  .hero .characters .ahreum {
+    width: 40rem;
+    margin-left: -22rem;
+  }
+  .hero .castle {
+    animation: ani-Ls 2s infinite ease-in-out;
+  }
+  .hero .toilet {
+    animation: ani-Ls 1.5s infinite ease-in-out;
+  }
+  .hero .wizard {
+    animation: ani-Lu 1.5s infinite ease-in-out;
+  }
+  .hero .gam {
+    animation: ani-Rm 3s infinite ease-in-out;
+  }
+  .hero .knight {
+    animation: ani-Rl 4s infinite ease-in-out;
+  }
+  .hero .chasa {
+    animation: ani-Ls 2.5s infinite ease-in-out;
+  }
+  .hero .palace {
+    animation: ani-Rs 4s infinite ease-in-out;
+  }
+  .hero .man {
+    animation: ani-Ru 2s infinite ease-in-out;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .hero {
+    height: 85rem;
+  }
+  .hero .down-arrow {
+    margin: 2rem auto 5rem auto;
+    width: 50px;
+    height: 50px;
+  }
+  .hero .characters .castle {
+    width: 26rem;
+    margin-left: -35em;
+    bottom: 35%;
+    transform: rotate(-11deg);
+    opacity: 0.9;
+  }
+  .hero .characters .toilet {
+    width: 20rem;
+    margin-left: -40em;
+    bottom: 20%;
+    transform: rotate(-6deg);
+  }
+  .hero .characters .wizard {
+    width: 12rem;
+    margin-left: -40em;
+    bottom: 9%;
+    transform: rotate(-10deg);
+  }
+  .hero .characters .gam {
+    width: 26rem;
+    margin-left: -31rem;
+    transform: rotate(3deg);
+  }
+  .hero .characters .knight {
+    width: 18rem;
+    margin-left: 23rem;
+    bottom: 14%;
+    transform: rotate(7deg);
+    opacity: 0.8;
+  }
+  .hero .characters .chasa {
+    width: 26rem;
+    margin-left: 6rem;
+    bottom: 17%;
+    transform: rotate(-2deg);
+  }
+  .hero .characters .palace {
+    width: 28rem;
+    margin-left: 12rem;
+    bottom: 7%;
+    transform: rotate(6deg);
+  }
+  .hero .characters .man {
+    width: 13rem;
+    margin-left: 15rem;
+    bottom: 23%;
+    transform: rotate(6deg);
+  }
+  .hero .characters .ahreum {
+    width: 44rem;
+    margin-left: -24rem;
+  }
+  .hero .castle {
+    animation: ani-Ls 2s infinite ease-in-out;
+  }
+  .hero .toilet {
+    animation: ani-Ls 1.5s infinite ease-in-out;
+  }
+  .hero .wizard {
+    animation: ani-Lu 1.5s infinite ease-in-out;
+  }
+  .hero .gam {
+    animation: ani-Rm 3s infinite ease-in-out;
+  }
+  .hero .knight {
+    animation: ani-Rl 4s infinite ease-in-out;
+  }
+  .hero .chasa {
+    animation: ani-Ls 2.5s infinite ease-in-out;
+  }
+  .hero .palace {
+    animation: ani-Rs 4s infinite ease-in-out;
+  }
+  .hero .man {
+    animation: ani-Ru 2s infinite ease-in-out;
+  }​
+}
+@keyframes ani-Rs {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes ani-Rm {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(9deg);
+  }
+}
+
+@keyframes ani-Rl {
+  0% {
+    transform: rotate(13deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: rotate(13deg);
+  }
+}
+
+@keyframes ani-Ru {
+  0% {
+    transform: matrix(0.99, 0.14, -0.14, 0.99, 0, -6);
+  }
+  50% {
+    transform: matrix(0.98, 0.17, -0.17, 0.98, 0, 0);
+  }
+  100% {
+    transform: matrix(0.99, 0.14, -0.14, 0.99, 0, -6);
+  }
+}
+
+@keyframes ani-Ls {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes ani-Lm {
+  0% {
+    transform: rotate(-12deg);
+  }
+  50% {
+    transform: rotate(-11deg);
+  }
+  100% {
+    transform: rotate(-12deg);
+  }
+}
+
+@keyframes ani-Lu {
+  0% {
+    transform: matrix(0.98, -0.17, 0.17, 0.98, 0, -6);
+  }
+  50% {
+    transform: matrix(0.98, -0.21, 0.21, 0.98, 0, 0);
+  }
+  100% {
+    transform: matrix(0.98, -0.17, 0.17, 0.98, 0, -6);
+  }
+}
+
+.intro {
+  margin: 0;
+  text-align: center;
+  padding: 5rem 0;
+}
+.intro .section-name {
+  font-size: 2.5rem;
+}
+.intro .section-description {
+  font-size: 1rem;
+  padding: 0 3rem;
+}
+.button.is-large.cta-main {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 769px) {
+  .intro {
+    padding: 6.5rem 0;
+  }
+  .intro .section-name {
+    font-size: 4rem;
+  }
+  .intro .section-description {
+    font-size: 1.3rem;
+  }
+  .button.is-large.cta-main {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .intro {
+    padding: 8.75rem 0;
+    /* margin: 8.75rem 0; */
+  }
+  .intro .section-name {
+    font-size: 5rem;
+  }
+  .intro .section-description {
+    font-size: 1.5rem;
+  }
+  .button.is-large.cta-main {
+    font-size: 1.9rem;
+  }
+}
+
+.media {
+  background-color: #fff;
+  text-align: center;
+  padding: 0;
+}
+.media .category-name {
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  color: #1a1a1a;
+}
+.media .media-column {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.media .media-columns {
+  width: 80%;
+  margin: 0 auto;
+}
+.media .section-description {
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+.media .logo {
+  display: block;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-height: 4rem;
+  margin: 0 auto;
+}
+.media .press-row {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #ebebeb;
+}
+.media .press-row.first {
+  margin-top: 1rem;
+}
+.media .press-row.last,
+.media .media-columns.last {
+  margin-bottom: 5rem;
+}
+.media .article {
+  text-align: left;
+  color: #bbbbbb;
+  font-size: 0.8rem;
+}
+.media .article:hover {
+  color: #ff8099;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 769px) {
+  .media {
+  }
+  .media .press-row {
+    width: 70%;
+  }
+  .media .article {
+    font-size: 1.1rem;
+  }
+
+  .media .logo.tall {
+    max-height: 4rem;
+  }
+  .media .article {
+    font-size: 0.9rem;
+  }
+  .media .media-columns {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .media .media-columns.last {
+    margin-bottom: 6.5rem;
+  }
+  .media .media-column {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .media .section-description {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .media {
+  }
+  .media .press-row {
+    width: 70%;
+  }
+  .media .article {
+    font-size: 1.2rem;
+  }
+  .media .logo.tall {
+    max-height: 6rem;
+  }
+  .media .article {
+    font-size: 1rem;
+  }
+  .media .media-columns {
+    margin: 0 auto;
+  }
+  .media .media-columns.last {
+    margin: 0 auto 8.5rem auto;
+  }
+  .media .press-row.last {
+    margin-bottom: 8.75rem;
+  }
+  .media .section-description {
+    font-size: 1.2rem;
+  }
+}
+
+.portfolio {
+  padding: 7.5rem 0 0 0;
+}
+.portfolio .tile.is-ancestor {
+  margin: 5rem 1rem 0 1rem;
+}
+.portfolio .section-name {
+  font-size: 2rem;
+}
+.portfolio .section-description {
+  font-size: 1rem;
+}
+.tile.is-8.is-vertical.is-parent {
+  padding: 0;
+}
+/* .gameBoxImg .tile.is-parent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 1em;
+} */
+.tile.is-child.box {
+  padding: 0;
+  box-shadow: none;
+}
+.portfolio-bg {
+  background-size: cover;
+  text-align: center;
+}
+.gameBoxImg .tile.is-parent {
+  display: flex;
+  flex-direction: row;
+  padding:0;
+  margin-top: 0.5rem;
+}
+.smImg,
+.bigImg {
+  background-color: #f9f9f9;
+}
+.bigImg {
+  height: auto;
+}
+.smImg {
+  height: auto;
+  /* margin-right: 5px; */
+}
+.bigImg {
+  height: auto;
+}
+.bigImgBox {
+  position: relative;
+}
+.bigImgBox .textOnImage {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width:90%;
+  transform: translate( -50%, -50% );
+  text-align: center;
+}
+/* .bigImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+} */
+.bigImgBox h1 {
+  margin-top: 0;
+  padding-top: 1.5rem;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #353535;
+}
+.bigImgBox p {
+  font-size: 0.9rem;
+  /* margin: 7.5rem 34% 1rem 35%; */
+  color: #353535;
+}
+.bigImgBox a {
+  font-size: 1rem;
+}
+.gameBox .smImgBox {
+  padding-right: 0.5rem !important;
+}
+.gameBox .smImgBox:last-child {
+  padding-right: 0 !important;
+}
+.tile.is-child.box .smImg {
+  /*  */
+  /* height: 265px; */
+}
+.button.portfolio-introBtn {
+  font-size: 0.7rem;
+  border-radius: 3rem;
+  background-image: linear-gradient(155deg, #ff9c82, #fd1a67);
+  margin: 0.5rem auto;
+  height: auto;
+  padding: 0.1rem 0.8rem 0.2rem 0.8rem;
+}
+.button.portfolio-introBtn img {
+  width: 17px;
+  margin-left: 5px;
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+.lock {
+  width: 0.9rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+}
+.private {
+  color: #f7607d;
+  font-size: 0.7rem;
+  /* margin-top: 0.5rem; */
+}
+.gameBoxDescription {
+  margin: 0 1rem;
+}
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-tag {
+  border: 1px solid;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 0.2rem 0.4rem 0.1rem 0.4rem;
+  border-radius: 1.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.greenTag {
+  color: #a4b528;
+  border-color: #dfe999;
+}
+.orangeTag {
+  color: #ff9e70;
+  border-color: #ffcdb6;
+}
+.blueTag {
+  color: #7e98bb;
+  border-color: #d5e3f5;
+}
+.purpleTag {
+  color: #b579df;
+  border-color: #e1bff9;
+}
+.portfolio-tag img {
+  width: 15px;
+  height: 14px;
+}
+.tag-text {
+  vertical-align: text-top;
+  font-size: 0.9rem;
+}
+.portfolio-text {
+  margin: 0.5rem 0;
+}
+/* .portfolio-text .column {
+  border: 1px solid black;
+} */
+.portfolio-text .main-text {
+  font-size: 1.1rem;
+  padding: 0;
+  line-height: 1.8;
+}
+.portfolio-text .main-text p {
+  word-break: break-all;
+}
+.portfolio-text .category-text {
+  color: #c7c7c7;
+}
+.portfolio-text .column.is-3 {
+  padding: 0;
+}
+.main-text p,
+.portfolio-text .table td {
+  padding: 0em 0.75em 0.75em 0em;
+}
+
+.portfolio-external-link::after {
+  content: "|";
+  color: #bbbbbb;
+  margin-left: 1px;
+}
+.portfolio-text .table {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .portfolio {
+    padding: 8.75rem 0 0 0;
+  }
+  .portfolio .section-name {
+    font-size: 3rem;
+  }
+  .portfolio .tile.is-ancestor.gameBoxImg {
+    margin: 5rem 3rem 0 3rem;
+  }
+  .bigImgBox h1 {
+    margin: 3rem auto 0.5rem auto;
+    font-size: 2rem;
+  }
+  .bigImgBox p {
+    font-size: 1rem;
+    /* margin: 7.5rem 34% 1rem 35%; */
+  }
+  .bigImgBox .textOnImage {
+    top: 10%;
+  }
+  .gameBoxImg .tile.is-parent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+  .gameBoxImg .tile.is-parent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1em;
+  }
+  .bigImg {
+    height: 100%;
+  }
+  .gameBoxDescription {
+    margin: 1.5rem 5.5rem;
+  }
+  .tag-text {
+    vertical-align: text-top;
+    font-size: 1rem;
+  }
+  .portfolio-tag img {
+    width: 20px;
+    height: 18px;
+  }
+  .portfolio-tag {
+    padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+  }
+  .portfolio-text .table td {
+    padding: 0em 0.75em 0.75em 0.75em;
+  }
+  .portfolio-text .main-text p {
+    padding-right: 2.5rem;
+  }
+  .portfolio-text .table {
+    display: block;
+  }
+  .button.portfolio-introBtn {
+    font-size: 0.8rem;
+    border-radius: 3rem;
+    margin: 0.5rem auto;
+    height: auto;
+    padding: 0.1rem 0.8rem 0.2rem 0.8rem;
+  }
+  .button.portfolio-introBtn img {
+    width: 20px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+  }
+  .private {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio {
+    padding: 8.75rem 0 0 0;
+  }
+  .portfolio .section-name {
+    font-size: 4rem;
+  }
+  .portfolio .section-description {
+    font-size: 1.5rem;
+  }
+  .portfolio .tile.is-ancestor.gameBoxImg {
+    margin: 8.75rem 5.5rem 0 5.5rem;
+  }
+  .gameBoxImg .tile.is-parent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1em;
+    margin-top: 0;
+
+  }
+  .bigImg {
+    height: 100%;
+  }
+  /* .bigImgBox {
+    padding-top: calc(4/5*100%);
+  } */
+  .bigImgBox .textOnImage {
+    top: 10%;
+  }
+  .bigImgBox h1 {
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 3rem;
+
+  }
+  .bigImgBox p {
+    font-size: 1.1rem;
+    /* margin: 7.5rem 34% 1rem 35%; */
+  }
+  .smImg {
+    /* height: 100%; */
+    width: 100%;
+    margin: 0;
+  }
+  .gameBoxDescription {
+    margin: 1.5rem 5.5rem;
+  }
+  .tag-text {
+    vertical-align: text-top;
+    font-size: 1rem;
+  }
+  .portfolio-tag img {
+    width: 20px;
+    height: 18px;
+  }
+  .portfolio-tag {
+    padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+  }
+  .portfolio-text .table td {
+    padding: 0em 0.75em 0.75em 0.75em;
+  }
+  .portfolio-text .main-text p {
+    padding-right: 2.5rem;
+  }
+  .portfolio-text .table {
+    display: block;
+  }
+  .button.portfolio-introBtn {
+    font-size: 1rem;
+    border-radius: 3rem;
+    margin: 0.5rem auto;
+    height: auto;
+    padding: 0.1rem 0.8rem 0.2rem 0.8rem;
+  }
+  .button.portfolio-introBtn img {
+    width: 25px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+  }
+  .private {
+    font-size: 1rem;
+  }
+}
+/* @media screen and (min-width: 1216px) {
+  .portfolio {
+    padding: 8.75rem 0 0 0;
+  }
+  ​.gameBoxImg .tile.is-parent {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1em;
+  }
+} */
+
+
+
+.custom-process {
+  background-color: #f9f9f9;
+  padding: 0;
+  margin-top: 5rem;
+}
+.custom-process .container {
+  margin: 0;
+}
+.custome-process .columns {
+  display: flex;
+}
+.custom-process .text {
+  padding: 2rem 1rem;
+}
+.custom-process .title {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.custom-process .question {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin: 0.3rem 0;
+}
+.custom-process .answer {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 0.3rem 0;
+}
+.custom-process-form img {
+  width: 100px;
+}
+@media screen and (min-width: 426px) {
+  .custom-process .title {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .custom-process .question {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 1rem 0;
+  }
+  .custom-process .answer {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .custom-process {
+    padding: 0;
+    margin-top: 12.5rem;
+  }
+  .custom-process .container {
+    margin: 0;
+  }
+  .custom-process .text {
+    padding: 5rem 0;
+  }
+  .custom-process .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .custom-process {
+    padding: 0;
+    margin-top: 8.75rem;
+  }
+  .custom-process .container {
+    margin: 0;
+  }
+  .custom-process .text {
+    padding: 5rem 0;
+  }
+  .custom-process .title {
+    font-size: 3rem;
+  }
+}
+.games {
+  margin: 5rem 0 0 0;
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.games .section-description,
+.games .section-name {
+  text-align: left;
+}
+.games .section-name {
+  font-size: 2rem;
+}
+.games .section-description {
+  font-size: 1.1rem;
+}
+.games .game-format {
+  margin-top: 3rem;
+}
+.games .game-format .column {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+p.caption {
+  color: #959595;
+}
+.games .game-format .column-fill {
+  display: block;
+  margin: 0 auto;
+}
+.games .game-format .board img {
+  width: 50%;
+}
+.games .game-format .AR img {
+  width: 75%;
+}
+@media screen and (min-width: 769px) {
+  .games {
+    margin: 3rem 0 5rem 0;
+  }
+  .games .game-format .column {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+  .games .game-format .board img {
+    width: 10rem;
+  }
+  .games .game-format .AR img {
+    width: 20rem;
+  }
+  .games .section-name {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .games {
+    margin: 12.5rem 0 0 0;
+    padding: 6rem;
+  }
+  .games .game-format {
+    margin-top: -0.5rem;
+  }
+  .games .section-name {
+    font-size: 3rem;
+  }
+}
+
+.about {
+  padding: 0;
+  margin: 12.5rem 0 0 0;
+  background-color: #f9f9f9;
+}
+.about .image {
+  position: relative;
+  width: 80%;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 2rem auto;
+}
+.about .image .photo {
+  position: absolute;
+  max-width: 1200px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.about .column-fill {
+  width: 100%;
+}
+.about .text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.about .columns.is-gapless {
+  display: flex;
+}
+.about .my-name {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  color: #353535;
+  margin-left: -0.5rem;
+  padding-left: 1rem;
+  text-align: left;
+  margin: 1rem 0 1rem 0;
+}
+.about .my-mission {
+  line-height: 1.5;
+  color: #959595;
+  font-size: 0.9rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+@media screen and (min-width: 426px) {
+  .about .my-name {
+    font-size: 2.5rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .about .my-mission {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .about {
+    /* padding-bottom: 8rem; */
+  }
+  .about .image {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .about .text {
+    margin-left: 3rem;
+  }
+  .about .my-name {
+    font-size: 3rem;
+    text-align: left;
+    margin: 3rem 0 1rem 0;
+  }
+  .about .my-mission {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about .text {
+    margin-left: 1rem;
+  }
+  .about .my-name {
+    font-size: 2rem;
+    margin: 4rem 0 1rem 0;
+  }
+  .about .my-mission {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .about .my-mission {
+    font-size: 1.6rem;
+  }
+  .about .my-name {
+    font-size: 3rem;
+  }
+}
+
+.bottom {
+  padding: 0;
+  margin: 5rem 0;
+}
+.bottom .section-name {
+  font-size: 2rem;
+}
+.bottom .section-description {
+  color: #353535;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.bottom img {
+  width: 75%;
+  display: block;
+  margin: 1rem auto;
+}
+@media screen and (min-width: 426px) {
+  .bottom {
+    padding: 0;
+    margin: 12.5rem 0;
+  }
+  .bottom .section-name {
+    font-size: 3rem;
+  }
+  .bottom .section-description {
+    font-size: 1.5rem;
+  }
+  .bottom img {
+    width: 60%;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .bottom .section-name {
+    font-size: 4rem;
+  }
+  .bottom .section-description {
+    font-size: 1.5rem;
+  }
+  .bottom img {
+    width: 55%;
+    margin: 3rem auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bottom {
+    padding: 0;
+    margin: 12.5rem 0;
+  }
+  .bottom .section-name {
+    font-size: 5rem;
+  }
+  .bottom .section-description {
+    font-size: 1.5rem;
+  }
+  .bottom img {
+    width: 55%;
+    margin: 3rem auto;
+  }
+}
+
+.footer {
+  background-color: #f9f9f9;
+}
+.footer p {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+.footer a,
+.footer a:visited {
+  color: #b3364f;
+  font-size: 0.8rem;
+}
+.footer a:hover {
+  color: #ff99ad;
+}
+@media screen and (min-width: 769px) {
+  .footer p {
+    font-size: 1rem;
+  }
+  .footer a,
+  .footer a:visited {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer p {
+    font-size: 1rem;
+  }
+  .footer a,
+  .footer a:visited {
+    font-size: 1rem;
+  }
 }
