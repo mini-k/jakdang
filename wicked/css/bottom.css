@@ -12,6 +12,7 @@
   display: block;
   margin: 1rem auto;
 }
+
 @media screen and (min-width: 426px) {
   .bottom {
     padding: 0;
@@ -22,16 +23,21 @@
     margin: 2rem auto;
   }
 }
+
 @media screen and (min-width: 769px) {
   .bottom img {
     width: 55%;
     margin: 3rem auto;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .bottom {
     padding: 0;
     margin: 12.5rem 0;
+  }
+  .bottom .section-description {
+    font-size: 1.5rem;
   }
   .bottom img {
     width: 55%;

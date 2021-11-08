@@ -1,198 +1,255 @@
-.section.portfolio {
-  padding: 10rem 0 0 0;
+.portfolio {
+  padding: 5rem 0 0 0;
 }
-.portfolio .tile.is-ancestor {
-  margin: 5rem 1rem 0 1rem;
+.portfolio .container {
+  margin: 5rem 2rem;
 }
-/* .portfolio .section-name {
-  font-size: 2rem;
-} */
-.portfolio .section-description {
-  font-size: 1rem;
+.portfolio article {
+  margin-bottom: 5rem;
 }
 .tile.is-8.is-vertical.is-parent {
   padding: 0;
+  width: 100%;
 }
-/* .gameBoxImg .tile.is-parent {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 0 1em;
-  } */
-.tile.is-child.box {
-  padding: 0;
-  box-shadow: none;
+.tile.is-parent.is-4 {
+  display: none;
 }
-.portfolio-bg {
-  background-size: cover;
-  text-align: center;
+
+.portfolio .section-description {
+  font-size: 1rem;
 }
-.gameBoxImg .tile.is-parent {
+.portfolio_image {
+  width: 100%;
+  /* aspect-ratio: 3 / 2; */
+  min-height: auto !important;
+}
+
+.portfolio_image .tile.is-parent {
   display: flex;
   flex-direction: row;
   padding: 0;
   margin-top: 0.5rem;
 }
-.smImg,
-.bigImg {
+.tile.is-child.box {
+  padding: 0;
+  box-shadow: none;
+}
+
+.portfolio_image_small {
+  height: 32%;
+  flex-grow: 0 !important;
+}
+.portfolio_image_small img,
+.portfolio_image_big img {
   background-color: var(--gray2);
 }
-.bigImg {
+.portfolio_image_big img {
   height: auto;
 }
-.smImg {
-  height: auto;
-  /* margin-right: 5px; */
-}
-.bigImg {
-  height: auto;
-}
-.bigImgBox {
+
+.portfolio_image_big {
   position: relative;
 }
-.bigImgBox .textOnImage {
+.portfolio_image_big .portfolio_image_name {
   position: absolute;
-  top: 15%;
+  top: 15% !important;
   left: 50%;
   width: 90%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
-/* .bigImg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: auto;
-    width: 100%;
-  } */
-.bigImgBox h1 {
+
+.portfolio_image_big h1 {
   margin-top: 0;
-  padding-top: 1.5rem;
-  font-family: "Nanum Myeongjo", serif;
+  /* padding-top: 1.5rem; */
+  font-family: var(--family-serif);
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--gray9);
 }
-.bigImgBox p {
-  font-size: 0.9rem;
-  /* margin: 7.5rem 34% 1rem 35%; */
+.portfolio_image_big p {
+  font-size: 0.7rem;
   color: var(--gray9);
 }
-.bigImgBox a {
-  font-size: 1rem;
+.portfolio_image_big a {
+  font-size: 0.8rem;
 }
-.gameBox .smImgBox {
+.gameBox .portfolio_image_small {
   padding-right: 0.5rem !important;
 }
-.gameBox .smImgBox:last-child {
+.gameBox .portfolio_image_small:last-child {
   padding-right: 0 !important;
 }
-.tile.is-child.box .smImg {
-  /*  */
-  /* height: 265px; */
-}
-.button.portfolio-introBtn {
+.portfolio-introBtn {
   font-size: 0.7rem;
-  border-radius: 3rem;
+  border-radius: 3rem !important;
   background-image: linear-gradient(155deg, #ff9c82, #fd1a67);
-  margin: 0.5rem auto;
-  height: auto;
+  margin: 0.2rem auto;
+  height: 1.3rem !important;
   padding: 0.1rem 0.8rem 0.2rem 0.8rem;
+  transition: all 0.3s;
+}
+.portfolio-introBtn:hover {
+  background-image: linear-gradient(155deg, #ff4264, #96005a);
 }
 .button.portfolio-introBtn img {
+  background-color: transparent;
   width: 17px;
   margin-left: 5px;
   vertical-align: middle;
   margin-bottom: 1px;
 }
 .lock {
-  width: 0.9rem;
-  height: 1rem;
+  width: 0.7rem;
   margin-right: 0.3rem;
 }
 .private {
-  color: var(--primary);
   font-size: 0.7rem;
-  /* margin-top: 0.5rem; */
+  margin-top: 0rem;
 }
-.gameBoxDescription {
-  margin: 0 1rem;
+.private span {
+  color: var(--pink5);
 }
-.gameBoxDescription .columns {
+.tile.is-parent.is-4 {
+  display: none;
+}
+.portfolio_text .columns {
   margin: 0;
 }
-.portfolio-tags {
+.portfolio_text_tags {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 0.5rem;
 }
-.portfolio-tag {
+.portfolio_tag {
   border: 1px solid;
   font-size: 1.1rem;
   font-weight: bolder;
-  padding: 0.2rem 0.4rem 0.1rem 0.4rem;
+  padding: 0rem 0.4rem 0.1rem 0.4rem;
   border-radius: 1.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
 }
-.greenTag {
+.green-tag {
   color: #a4b528;
   border-color: #dfe999;
 }
-.orangeTag {
+.orange-tag {
   color: #ff9e70;
   border-color: #ffcdb6;
 }
-.blueTag {
+.blue-tag {
   color: #7e98bb;
   border-color: #d5e3f5;
 }
-.purpleTag {
+.purple-tag {
   color: #b579df;
   border-color: #e1bff9;
 }
-.portfolio-tag img {
-  width: 15px;
-  height: 14px;
+.portfolio_tag img {
+  width: 13px;
+  height: 12px;
+  margin-right: 3px;
 }
 .tag-text {
-  vertical-align: text-top;
-  font-size: 0.9rem;
+  /* vertical-align: initial; */
+  font-size: 0.8rem;
 }
-.portfolio-text {
+.portfolio_text_description {
   margin: 0.5rem 0;
 }
-
-.portfolio-text .main-text {
+.portfolio_text_description .is-6 {
   font-size: 1.1rem;
   padding: 0;
   line-height: 1.8;
-}
-.portfolio-text .main-text p {
   word-break: break-all;
 }
-.portfolio-text .category-text {
-  color: #c7c7c7;
-}
-.portfolio-text .column.is-3 {
-  padding: 0;
-}
-.main-text p,
-.portfolio-text .table td {
+.portfolio_text_description .is-6 p,
+.portfolio_text_description .table td {
   padding: 0em 0.75em 0.75em 0em;
 }
-
+.portfolio_text_description .column.is-3 {
+  padding: 0;
+}
+.portfolio_text_description .category-text {
+  color: #c7c7c7;
+}
+.portfolio_text_description .table {
+  display: none;
+}
+tbody a {
+  transition: all 0.3s;
+}
+tbody a:hover {
+  color: #c00073;
+  text-decoration: underline;
+}
 .portfolio-external-link::after {
   content: "|";
   color: var(--gray6);
   margin-left: 1px;
 }
-.portfolio-text .table {
-  display: none;
+
+.portfolio__custom-process {
+  background-color: var(--gray1);
+  padding: 0;
+  margin-top: 5rem;
 }
+.portfolio__custom-process .container {
+  margin: 0;
+}
+.portfolio__custom-process .columns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.custom-process-form {
+  flex-direction: row !important;
+  margin: 2rem 5rem 0 5rem;
+}
+.portfolio__custom-process .column {
+  padding: 0;
+}
+.portfolio__custom-process .custom-process-form {
+  margin: 2rem 0 0 0;
+}
+.portfolio__custom-process .text {
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+.portfolio__custom-process .title {
+  font-family: var(--family-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.portfolio__custom-process .question {
+  font-family: var(--family-serif);
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin: 0.3rem 0;
+}
+.portfolio__custom-process .answer {
+  font-family: var(--family-sans-serif);
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 0.3rem 0;
+}
+.custom-process-form .column {
+  margin: 1rem auto;
+  flex-basis: content;
+}
+.custom-process-form img {
+  width: 80%;
+}
+
 .portfolio__ar {
   margin: 5rem 0 0 0;
   padding: 3rem 1rem;
   text-align: center;
-  background-color: var(--gray2);
+  background-color: var(--gray1);
 }
 .portfolio__ar .section-description,
 .portfolio__ar .section-name {
@@ -224,59 +281,93 @@ p.caption {
 .portfolio__ar .game-format .AR img {
   width: 75%;
 }
-.portfolio__custom-process {
-  background-color: var(--gray1);
-  padding: 0;
-  margin-top: 5rem;
-}
-.portfolio__custom-process .container {
-  margin: 0;
-}
-.portfolio__custom-process .columns {
-  display: flex;
-}
-.portfolio__custom-process .text {
-  padding: 2rem 1rem;
-}
-.portfolio__custom-process .title {
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-.portfolio__custom-process .question {
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 0.8rem;
-  font-weight: 800;
-  margin: 0.3rem 0;
-}
-.portfolio__custom-process .answer {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 0.8rem;
-  text-align: left;
-  margin: 0.3rem 0;
-}
-.portfolio__custom-process-form img {
-  width: 100px;
-}
 
 @media screen and (min-width: 426px) {
+  .portfolio {
+    padding: 5rem 0 0 0;
+  }
+  .portfolio .container {
+    margin: 5rem 3rem;
+  }
+  .portfolio article {
+    margin-bottom: 5rem;
+  }
+  .tile.is-8.is-vertical.is-parent {
+    padding: 0;
+    width: 100%;
+  }
+  .portfolio_image_big a {
+    font-size: 0.8rem;
+  }
+  .portfolio_image_name {
+    top: 10% !important;
+  }
+  .portfolio_image_big h1 {
+    margin-top: 0;
+    /* padding-top: 1.5rem; */
+    font-family: var(--family-serif);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--gray9);
+  }
+  .portfolio-introBtn {
+    font-size: 0.7rem;
+    border-radius: 3rem !important;
+    background-image: linear-gradient(155deg, #ff9c82, #fd1a67);
+    margin: 0.5rem auto;
+    height: 1.5rem !important;
+    padding: 0rem 0.5rem 0.1rem 0.5rem !important;
+    transition: all 0.3s;
+  }
+  .lock {
+    width: 0.8rem;
+    height: 0.9rem;
+    margin-right: 0.3rem;
+  }
+  .private {
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+  }
+  .tile.is-parent.is-4 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .portfolio_image_small {
+    width: 33%;
+  }
+  .portfolio__custom-process .columns {
+    flex-direction: column;
+  }
+  .custom-process-form .column {
+    margin: 1rem auto;
+    flex-basis: content;
+  }
+  .custom-process-form {
+    flex-direction: row !important;
+    margin: 2rem 5rem 0 5rem;
+  }
+  .custom-process-form img {
+    width: 70%;
+  }
   .portfolio__custom-process .title {
-    font-family: "Nanum Myeongjo", serif;
     font-size: 2rem;
-    font-weight: 700;
   }
   .portfolio__custom-process .question {
-    font-family: "Nanum Myeongjo", serif;
     font-size: 1.1rem;
-    font-weight: 800;
     margin: 1rem 0;
   }
   .portfolio__custom-process .answer {
-    font-family: "Noto Sans KR", sans-serif;
     font-size: 1.1rem;
     text-align: left;
     margin: 1rem 0;
+  }
+
+  .portfolio__ar .container {
+    margin: 0 2rem;
+  }
+  .portfolio__ar .game-format {
+    display: flex;
   }
 }
 
@@ -284,65 +375,32 @@ p.caption {
   .portfolio {
     padding: 8.75rem 0 0 0;
   }
-  /* .portfolio .section-name {
-            font-size: 3rem;
-        } */
-  .portfolio .tile.is-ancestor.gameBoxImg {
-    margin: 5rem 3rem 0 3rem;
+  .portfolio .container {
+    margin: 8.75rem 4rem;
   }
-  .bigImgBox h1 {
+  .portfolio_image {
+    width: 100%;
+    justify-content: space-between;
+    /* aspect-ratio: 3 / 2; */
+  }
+  .tile.is-8.is-vertical.is-parent {
+    padding: 0;
+    width: 70.1%;
+    height: 100%;
+  }
+  .portfolio_image_big h1 {
     margin: 3rem auto 0.5rem auto;
     font-size: 2rem;
   }
-  .bigImgBox p {
+  .portfolio_image_big p {
     font-size: 1rem;
-    /* margin: 7.5rem 34% 1rem 35%; */
-  }
-  .bigImgBox .textOnImage {
-    top: 10%;
-  }
-  .gameBoxImg .tile.is-parent {
-    display: flex;
-    flex-direction: row;
-    margin-top: 0;
-  }
-  .gameBoxImg .tile.is-parent {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 0 1em;
-  }
-  .bigImg {
-    height: 100%;
-  }
-  .gameBoxDescription {
-    margin: 1.5rem 5.5rem;
-  }
-  .tag-text {
-    vertical-align: text-top;
-    font-size: 1rem;
-  }
-  .portfolio-tag img {
-    width: 20px;
-    height: 18px;
-  }
-  .portfolio-tag {
-    padding: 0.3rem 0.5rem 0.2rem 0.5rem;
-  }
-  .portfolio-text .table td {
-    padding: 0em 0.75em 0.75em 0.75em;
-  }
-  .portfolio-text .main-text p {
-    padding-right: 2.5rem;
-  }
-  .portfolio-text .table {
-    display: block;
   }
   .button.portfolio-introBtn {
     font-size: 0.8rem;
     border-radius: 3rem;
     margin: 0.5rem auto;
     height: auto;
-    padding: 0.1rem 0.8rem 0.2rem 0.8rem;
+    padding: 0.1rem 0.8rem 0.2rem 0.8rem !important;
   }
   .button.portfolio-introBtn img {
     width: 20px;
@@ -351,7 +409,42 @@ p.caption {
   }
   .private {
     font-size: 1rem;
+    margin-top: 0.3rem;
   }
+  .portfolio_image_big .portfolio_image_name {
+    top: 8% !important;
+  }
+  .portfolio_image .tile.is-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 27.8%;
+  }
+  .portfolio_image_small {
+    width: auto;
+  }
+  .tag-text {
+    /* vertical-align: text-top; */
+    font-size: 1rem;
+  }
+  .portfolio_tag img {
+    width: 18px;
+    height: 16px;
+    margin-right: 3px;
+  }
+  .portfolio_tag {
+    padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+  }
+  .portfolio_text_description .table {
+    display: block;
+  }
+  .portfolio_text_description .table td {
+    padding: 0em 0.25em 0.75em 0.25em;
+  }
+  .portfolio_text_description .is-6 p {
+    padding-right: 1.5rem;
+  }
+
   .portfolio__custom-process {
     padding: 0;
     margin-top: 12.5rem;
@@ -359,14 +452,27 @@ p.caption {
   .portfolio__custom-process .container {
     margin: 0;
   }
+  .portfolio__custom-process .columns {
+    flex-direction: row;
+  }
   .portfolio__custom-process .text {
-    padding: 5rem 0;
+    padding: 2rem 1rem 2rem 0;
+  }
+  .portfolio__custom-process .question,
+  .portfolio__custom-process .answer {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
   }
   .portfolio__custom-process .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem !important;
   }
+
   .portfolio__ar {
     margin: 3rem 0 5rem 0;
+  }
+  .portfolio__ar .container {
+    margin: 0 4rem;
   }
   .portfolio__ar .game-format .column {
     padding-top: 1.5rem;
@@ -385,100 +491,117 @@ p.caption {
 
 @media screen and (min-width: 1024px) {
   .portfolio {
-    margin: 13.5rem 0 0 0;
+    padding: 12.5rem 0 0 0;
   }
-  .portfolio .tile.is-ancestor.gameBoxImg {
-    margin: 8.75rem 5.5rem 0 5.5rem;
+  .portfolio .section-description {
+    font-size: 1.5rem;
   }
-  .gameBoxImg .tile.is-parent {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 0 1em;
-    margin-top: 0;
+  .portfolio .container {
+    margin: 8.75rem 8rem;
   }
-  .bigImg {
+  .portfolio article {
+    margin-bottom: 8.75rem;
+  }
+  .portfolio_image {
+    width: 100%;
+    justify-content: space-between;
+    /* aspect-ratio: 3 / 2; */
+  }
+  .tile.is-8.is-vertical.is-parent {
+    padding: 0;
+    width: 70.1%;
     height: 100%;
   }
-  /* .bigImgBox {
-            padding-top: calc(4/5*100%);
-            } */
-  .bigImgBox .textOnImage {
-    top: 10%;
+  .portfolio_image_big .portfolio_image_name {
+    top: 13% !important;
   }
-  .bigImgBox h1 {
+  .portfolio_image_big h1 {
     margin: 0;
-    padding-top: 1rem;
     font-size: 3rem;
   }
-  .bigImgBox p {
+  .portfolio_image_big p {
     font-size: 1.1rem;
-    /* margin: 7.5rem 34% 1rem 35%; */
-  }
-  .smImg {
-    /* height: 100%; */
-    width: 100%;
-    margin: 0;
-  }
-  .gameBoxDescription {
-    margin: 1.5rem 5.5rem;
-  }
-  .tag-text {
-    vertical-align: text-top;
-    font-size: 1rem;
-  }
-  .portfolio-tag img {
-    width: 20px;
-    height: 18px;
-  }
-  .portfolio-tag {
-    padding: 0.3rem 0.5rem 0.2rem 0.5rem;
-  }
-
-  .portfolio-text .table td {
-    padding: 0em 0.75em 0.75em 0.75em;
-  }
-  .portfolio-text .main-text p {
-    padding-right: 2.5rem;
-  }
-  .portfolio-text .table {
-    display: block;
   }
   .button.portfolio-introBtn {
     font-size: 1rem;
     border-radius: 3rem;
     margin: 0.5rem auto;
-    height: auto;
-    padding: 0.1rem 0.8rem 0.2rem 0.8rem;
+    height: 2rem !important;
+    padding: 0.1rem 0.8rem !important;
   }
   .button.portfolio-introBtn img {
-    width: 25px;
+    width: 22px;
     margin-left: 5px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
   }
   .private {
     font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .tag-text {
+    /* vertical-align: text-bottom; */
+    font-size: 1.1rem;
+  }
+  .portfolio_image .tile.is-parent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: space-between;
+    width: 27.8%;
+  }
+  .portfolio_tag img {
+    width: 20px;
+    height: 18px;
+    margin-right: 5px;
+  }
+  .portfolio_text_description .table td {
+    padding: 0em 0.75em 0.75em 0;
+  }
+  .portfolio_text_description .is-6 p {
+    padding-right: 2.5rem;
+  }
+  .portfolio_text_description .table {
+    display: block;
   }
   .portfolio__custom-process {
     padding: 0;
     margin-top: 8.75rem;
   }
   .portfolio__custom-process .container {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1440px;
   }
   .portfolio__custom-process .text {
-    padding: 5rem 0;
+    padding: 4rem 4rem 4rem 0;
   }
   .portfolio__custom-process .title {
     font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .portfolio__custom-process .question,
+  .portfolio__custom-process .answer {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  .custom-process-form img {
+    width: 70%;
   }
   .portfolio__ar {
     margin: 12.5rem 0 0 0;
-    padding: 6rem;
+    padding: 8rem;
+  }
+  .portfolio__ar .container {
+    margin: 0 auto;
   }
   .portfolio__ar .game-format {
     margin-top: -0.5rem;
   }
   .portfolio__ar .section-name {
     font-size: 3rem;
+  }
+}
+@media (min-width: 1441px) {
+  .portfolio .container {
+    margin: 8.75rem auto;
   }
 }

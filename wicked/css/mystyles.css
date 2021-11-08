@@ -10301,16 +10301,16 @@ label.panel-block:hover {
 .tile {
   /* align-items: stretch; */
   display: block;
-  flex-basis: 0;
+  /* flex-basis: 0; */
   flex-grow: 1;
   flex-shrink: 1;
   min-height: min-content;
 }
-.tile.is-ancestor {
+/* .tile.is-ancestor {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
   margin-top: -0.75rem;
-}
+} */
 .tile.is-ancestor:last-child {
   margin-bottom: -0.75rem;
 }
@@ -10504,7 +10504,7 @@ strong,
 }
 
 .section-description {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #575757;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -10542,6 +10542,10 @@ strong,
 .cta-main {
   font-weight: bold !important;
   background-image: linear-gradient(155deg, #ff9c82, #fd1a67);
+  transition: all 0.3s;
+}
+.cta-main:hover {
+  background-image: linear-gradient(155deg, #ff4264, #96005a);
 }
 
 .button.is-large {

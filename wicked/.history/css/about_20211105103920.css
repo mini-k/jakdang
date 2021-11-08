@@ -1,0 +1,114 @@
+section.about {
+  padding: 0;
+  margin: 5rem 0 0 0;
+  background-color: var(--gray1);
+}
+.about .image {
+  position: relative;
+  width: 80%;
+  background-color: var(--gray2);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 2rem auto;
+}
+.about .image .photo {
+  position: absolute;
+  max-width: 1200px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.about .column-fill {
+  width: 100%;
+}
+.about .text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.about .columns.is-gapless {
+  display: flex;
+}
+.about .my-name {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  color: var(--gray9);
+  padding-left: 1rem;
+  text-align: left;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.about .my-mission {
+  line-height: 1.5;
+  color: var(--gray7);
+  font-size: 0.7rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+@media screen and (min-width: 426px) {
+  section.about {
+    margin: 12.5rem 0 0 0;
+    padding: 0 0 0 2rem;
+  }
+  .about .my-name {
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .about .my-mission {
+    font-size: 1rem;
+    padding-left: 0rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  section.about {
+    margin: 12.5rem 0 0 0;
+    padding: 0;
+  }
+  .about .image {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .about .text {
+    margin-left: 3rem;
+  }
+  .about .my-name {
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 3rem 0 1rem 0;
+  }
+  .about .my-mission {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.about {
+    margin: 12.5rem 0 0 0;
+    padding: 0;
+  }
+  .about .text {
+    margin-left: 1rem;
+  }
+  .about .my-name {
+    font-size: 2rem;
+    margin: 4rem 0 1rem 0;
+  }
+  .about .my-mission {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .section.about {
+    margin: 12.5rem 0 0 0;
+    padding: 0;
+  }
+  .about .my-mission {
+    font-size: 1.6rem;
+  }
+  .about .my-name {
+    font-size: 3rem;
+  }
+}

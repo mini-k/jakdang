@@ -1,14 +1,14 @@
-.section.intro {
+.intro {
   margin: 0;
   text-align: center;
   padding: 5rem 0;
 }
 .intro .section-description {
-  font-size: 1rem;
-  padding: 0 3rem;
+  font-size: 1.2rem;
 }
 .button.is-large.cta-main {
   font-size: 1.2rem;
+  height: 40px;
 }
 @media screen and (min-width: 769px) {
   .intro {
@@ -19,16 +19,18 @@
   }
   .button.is-large.cta-main {
     font-size: 1.5rem;
+    height: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .section.intro {
+  .intro {
     padding: 8.75rem 0;
   }
-  .section.media {
-    padding: 0;
+  .intro .section-description {
+    font-size: 1.5rem;
   }
   .button.is-large.cta-main {
     font-size: 1.9rem;
+    height: 60px;
   }
 }
