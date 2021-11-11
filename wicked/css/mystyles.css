@@ -53,6 +53,25 @@
   --grey-light: $gray2;
   --primary: $pink5;
   --link: $pink7;
+
+  /* margin & padding size */
+  --space-xl: 12.5rem;
+  --space-l: 8.75rem;
+  --space-m: 5rem;
+  --space-s: 3rem;
+  --space-xs: 1rem;
+
+  /* font size */
+  --size-l1: 9.375rem;
+  --size-l2: 7.5rem;
+  --size-l3: 5rem;
+  --size-m1: 3.75rem;
+  --size-m2: 3rem;
+  --size-m3: 1.875rem;
+  --size-s1: 1.5rem;
+  --size-s2: 1.125rem;
+  --size-s3: 1rem;
+  --size-s4: 0.9rem;
 }
 
 @keyframes spinAround {
@@ -448,6 +467,7 @@ html {
   min-width: 300px;
   overflow-x: hidden;
   overflow-y: scroll;
+  -ms-overflow-style: none;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
 }
@@ -488,12 +508,13 @@ a {
   color: #f7607d;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.3s;
 }
 a strong {
   color: currentColor;
 }
 a:hover {
-  color: #363636;
+  color: #c00073;
 }
 
 code {
@@ -3057,9 +3078,68 @@ fieldset[disabled] .button {
   padding-right: 32px;
   width: 100%;
 }
+.intro .container {
+  margin: var(--space-m) auto;
+}
+.media .container {
+  margin: 0 auto var(--space-m) auto;
+}
+.portfolio .container {
+  margin: var(--space-m) var(--space-xs) 0 var(--space-xs);
+}
+.about .container {
+  margin: 0 0 0 var(--space-xs);
+}
+.bottom .container {
+  margin: var(--space-m) auto;
+}
+.portfolio__custom-process .container {
+  margin: 0 var(--space-xs) 0 0;
+}
+@media screen and (min-width: 426px) {
+  .intro .container {
+    margin: var(--space-m) auto;
+  }
+  .media .container {
+    margin: 0 auto var(--space-m) auto;
+  }
+  .portfolio .container {
+    margin: var(--space-m) var(--space-s) 0 var(--space-s);
+  }
+  .about .container {
+    margin: 0 0 0 var(--space-s);
+  }
+  .portfolio__custom-process .container {
+    margin: 0 var(--space-s) 0 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .intro .container {
+    margin: var(--space-m) auto;
+  }
+  .media .container {
+    margin: 0 auto var(--space-l) auto;
+  }
+  .portfolio .container {
+    margin: var(--space-l) var(--space-s) 0 var(--space-s);
+  }
+  .about .container {
+    margin: 0 var(--space-s);
+  }
+  .bottom .container {
+    margin: var(--space-l) auto;
+  }
+}
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 960px;
+  }
+  .portfolio .container {
+    margin: var(--space-xl) auto 0 auto;
+  }
+  .portfolio__custom-process .container {
+    margin: 0 var(--space-s) 0 0;
   }
 }
 @media screen and (max-width: 1215px) {
@@ -3076,10 +3156,45 @@ fieldset[disabled] .button {
   .container {
     max-width: 1152px;
   }
+  .intro .container {
+    margin: var(--space-l) auto;
+  }
+  .media .container {
+    margin: 0 auto var(--space-xl) auto;
+  }
+  .portfolio .container {
+    margin: var(--space-xl) auto 0 auto;
+  }
+  .bottom .container {
+    margin: var(--space-xl) auto;
+  }
 }
 @media screen and (min-width: 1408px) {
   .container {
     max-width: 1344px;
+  }
+  .intro .container {
+    margin: var(--space-l) auto;
+  }
+  .media .container {
+    margin: 0 auto var(--space-l) auto;
+  }
+  .portfolio .container {
+    margin: var(--space-l) 8.2rem 0 8.2rem;
+  }
+  .about .container {
+    margin: 0 0 0 8.2rem;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .portfolio .container {
+    margin: var(--space-xl) auto 0 auto;
+  }
+  .about .container {
+    margin: 0 auto 0 auto;
+  }
+  .portfolio__custom-process .container {
+    margin: 0 auto;
   }
 }
 
@@ -8595,7 +8710,7 @@ label.panel-block:hover {
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 3rem 1.5rem;
+  /* padding: 3rem 1.5rem; */
 }
 
 .section {
@@ -8610,9 +8725,9 @@ label.panel-block:hover {
   }
 }
 
-.footer {
+/* .footer {
   padding: 3rem 1.5rem 6rem;
-}
+} */
 
 .column {
   display: block;
@@ -10318,7 +10433,7 @@ label.panel-block:hover {
   margin-bottom: 0.75rem;
 }
 .tile.is-child {
-  margin: 0 !important;
+  /* margin: 0 !important; */
 }
 .tile.is-parent {
   padding: 0.75rem;
@@ -10486,61 +10601,63 @@ strong,
 .section-name {
   margin-bottom: 1.5rem;
   color: #1a1a1a;
-  font-family: "Nanum Myeongjo", serif;
+  font-family: var(--family-serif);
   font-weight: 700;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: var(--size-m2);
   line-height: 1.2;
 }
 @media screen and (min-width: 769px) {
   .section-name {
-    font-size: 4rem;
+    font-size: var(--size-m1);
   }
 }
 @media screen and (min-width: 1024px) {
   .section-name {
-    font-size: 5rem;
+    font-size: var(--size-l3);
   }
 }
 
 .section-description {
   margin-bottom: 1rem;
   color: #575757;
-  font-size: 1.2rem;
+  font-size: var(--size-s3);
   line-height: 1.5;
   text-align: center;
 }
 @media screen and (min-width: 769px) {
   .section-description {
-    font-size: 1.4rem;
+    font-size: var(--size-s2);
   }
 }
 @media screen and (min-width: 1024px) {
   .section-description {
-    font-size: 1.5rem;
+    font-size: var(--size-s1);
   }
 }
 
 .category-name {
   margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: var(--size-m3);
+  color: var(--gray10);
   line-height: 1.2;
-  font-family: "Nanum Myeongjo", serif;
+  font-family: var(--family-serif);
   font-weight: 700;
 }
 @media screen and (min-width: 769px) {
   .category-name {
-    font-size: 2.5rem;
+    font-size: var(--size-m2);
   }
 }
 @media screen and (min-width: 1024px) {
   .category-name {
-    font-size: 3rem;
+    font-size: var(--size-m2);
   }
 }
 
 .cta-main {
   font-weight: bold !important;
+  font-size: var(--size-s2) !important;
   background-image: linear-gradient(155deg, #ff9c82, #fd1a67);
   transition: all 0.3s;
 }
@@ -10548,9 +10665,35 @@ strong,
   background-image: linear-gradient(155deg, #ff4264, #96005a);
 }
 
+@media screen and (min-width: 769px) {
+  .cta-main {
+    font-size: var(--size-s1) !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cta-main {
+    font-size: var(--size-m3) !important;
+  }
+}
+
 .button.is-large {
-  /* font-size: 2rem; */
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  font-size: 2rem;
+  /* padding-left: 1.5em;
+  padding-right: 1.5em; */
   border-radius: 0.25em;
+}
+
+.description-big {
+  font-size: var(--size-s3);
+}
+.description-small {
+  font-size: var(--size-s4);
+}
+@media screen and (min-width: 769px) {
+  .description-big {
+    font-size: var(--size-s2);
+  }
+  .description-small {
+    font-size: var(--size-s3);
+  }
 }

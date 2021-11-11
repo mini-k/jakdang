@@ -1,57 +1,55 @@
 .portfolio-menu {
-    background-image: url("../img/background/portfolio-menu.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20rem;
-    display: flex;
-    align-items: center;
+  background-image: url("../img/background/portfolio-menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.portfolio-menu .container {
+  padding: var(--space-s) 0;
 }
 .portfolio-menu .section-name {
-    margin-bottom: 2rem;
-    color: var(--white);
+  color: var(--white);
 }
 .portfolio-menu .columns {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 .portfolio-menu .columns .column {
-    padding: 0 1rem;
+  padding: var(--space-xs);
+  cursor: pointer;
 }
-.portfolio-menu .columns h2 {
-    color: var(--white);
-    font-family: var(--family-serif);
-    text-decoration: underline var(--purple1);
-    text-underline-position: from-font;
-    transition: all 0.5s;
-    font-size: 1.25rem;
+.portfolio-menu .category-name {
+  color: var(--white);
+  text-decoration: underline var(--purple1);
+  text-underline-position: from-font;
+  transition: all 0.5s;
 }
 .portfolio-menu .column:hover h2 {
-    color: var(--green2);
-    text-decoration: underline var(--green2);
+  color: var(--green2);
+  text-decoration: underline var(--green2);
 }
-.portfolio-menu .columns p {
-    color: var(--purple1);
-    margin-top: 1rem;
-    transition: all 0.5s;
-    font-size: 0.65rem;
+.portfolio-menu .description-big {
+  color: var(--purple1);
+  /* margin-top: 1rem; */
+  transition: all 0.5s;
 }
-.portfolio-menu .column:hover p {
-    color: var(--green2);
+.portfolio-menu .column:hover .description-big {
+  color: var(--green2);
 }
-.portfolio-menu .columns img {
-    width: 20%;
-    height: 20%;
-    opacity: 0;
-    transition: all 0.5s;
+.portfolio-menu .arrowhead {
+  width: 14%;
+  height: 14%;
+  opacity: 0;
+  transition: all 0.5s;
 }
-.portfolio-menu .column:hover img {
-    opacity: 1;
+.portfolio-menu .column:hover .arrowhead {
+  opacity: 1;
 }
 
-.portfolio-menu-sm {
+/* .portfolio-menu-sm {
     height: 40px;
     background-color: var(--purple2);
-    position: fixed; /* Make it stick/fixed */
+    position: fixed;
     top: -80px;
     transition: top 0.3s;
     width: 100%;
@@ -76,27 +74,23 @@
 }
 .active-menu p {
     color: var(--green2);
+} */
+@media screen and (max-width: 425px) {
+  .portfolio-menu .category-name {
+    font-size: var(--size-s1);
+  }
 }
 
 @media screen and (min-width: 426px) {
-    .portfolio-menu {
-        height: 21.5rem;
-    }
-    .portfolio-menu .columns {
-        flex-direction: row;
-    }
-    .portfolio-menu .columns h2 {
-        font-size: 1.5rem;
-    }
-    .portfolio-menu .columns p {
-        font-size: 0.8rem;
-    }
-    .portfolio-menu .columns img {
-        width: 10%;
-        height: 10%;
-        margin-top: 0.5rem;
-    }
-    .portfolio-menu-sm {
+  .portfolio-menu .container {
+    padding: var(--space-m) 0;
+  }
+  .portfolio-menu .arrowhead {
+    width: 14%;
+    height: 14%;
+    margin-top: 0.5rem;
+  }
+  /* .portfolio-menu-sm {
         height: 50px;
     }
     .portfolio-menu-sm .container {
@@ -105,27 +99,18 @@
     .portfolio-menu-sm p {
         font-size: 1.2rem;
         margin-top: 0.8rem;
-    }
+    } */
 }
 @media screen and (min-width: 769px) {
-    .portfolio-menu {
-        height: 23rem;
-    }
-    .portfolio-menu .columns {
-        flex-direction: row;
-    }
-    .portfolio-menu .columns img {
-        width: 15%;
-        height: 15%;
-        margin-top: 1rem;
-    }
-    .portfolio-menu .columns h2 {
-        font-size: 2rem;
-    }
-    .portfolio-menu .columns p {
-        font-size: 1rem;
-    }
-    .portfolio-menu-sm {
+  .portfolio-menu .container {
+    padding: var(--space-s) 0;
+  }
+  .portfolio-menu .arrowhead {
+    width: 16%;
+    height: 16%;
+    margin-top: 1rem;
+  }
+  /* .portfolio-menu-sm {
         height: 50px;
     }
     .portfolio-menu-sm .container {
@@ -134,74 +119,55 @@
     .portfolio-menu-sm p {
         font-size: 1.2rem;
         margin-top: 1rem;
-    }​
+    }​ */
 }
 @media screen and (min-width: 1024px) {
-    .portfolio-menu {
-        height: 30rem;
-    }
-    .portfolio-menu .section-name {
-        font-size: 4rem;
-    }
-    .portfolio-menu .columns {
-        flex-direction: row;
-    }
-    .portfolio-menu .columns h2 {
-        font-size: 2.5rem;
-    }
-    .portfolio-menu .columns p {
-        font-size: 1rem;
-    }
-    .portfolio-menu .columns img {
-        width: 20%;
-        height: 20%;
-        margin-top: 1rem;
-    }
-    .portfolio-menu-sm {
-        height: 60px;
-    }
-    .portfolio-menu-sm .container {
-        margin: 0 8rem;
-        text-align: center;
-    }
-    .portfolio-menu-sm p {
-        font-size: 1.5rem;
-        margin-top: 0.6rem;
-    }
+  .portfolio-menu .container {
+    padding: var(--space-m) 0;
+  }
+  .portfolio-menu .arrowhead {
+    width: 20%;
+    height: 20%;
+    margin-top: 1rem;
+  }
+  /* .portfolio-menu-sm {
+    height: 60px;
+  }
+  .portfolio-menu-sm .container {
+    margin: 0 8rem;
+    text-align: center;
+  }
+  .portfolio-menu-sm p {
+    font-size: 1.5rem;
+    margin-top: 0.6rem;
+  } */
 }
 
 @media screen and (min-width: 1216px) {
-    .portfolio-menu {
-        height: 37rem;
-    }
-    .portfolio-menu .section-name {
-        font-size: 5rem;
-    }
-    .portfolio-menu .columns {
-        flex-direction: row;
-        margin: 0 10rem 2rem 10rem;
-    }
-    .portfolio-menu .columns h2 {
-        font-size: 3rem;
-    }
-    .portfolio-menu .columns p {
-        font-size: 1.1rem;
-    }
-    .portfolio-menu .columns img {
-        width: 20%;
-        height: 20%;
-        margin-top: 1rem;
-    }
-    .portfolio-menu-sm {
+  .portfolio-menu {
+    height: 37.5rem;
+  }
+  .portfolio-menu .container {
+    padding: var(--space-l) 0;
+  }
+  .portfolio-menu .columns {
+    margin: 0 var(--space-l) var(--space-s) var(--space-l);
+  }
+  .portfolio-menu .arrowhead {
+    width: 20%;
+    height: 20%;
+    margin-top: 1rem;
+  }
+  /* .portfolio-menu-sm {
         height: 60px;
     }
     .portfolio-menu-sm p {
         font-size: 1.5rem;
         margin-top: 0.8rem;
-    }
+    } */
 }
-@media screen and (min-width: 1441px) {
+/* @media screen and (min-width: 1441px) {
     .portfolio-menu-sm .container {
         margin: 0 auto;
     }
-}
+} */
