@@ -1,5 +1,5 @@
 .portfolio {
-  padding: var(--space-m) 0;
+  /* padding: var(--space-m) 0; */
 }
 .portfolio article {
   margin-bottom: var(--space-m);
@@ -7,6 +7,20 @@
 .portfolio article:last-child {
   margin-bottom: 0;
 }
+
+/* test starts */
+
+.project-image {
+  margin-bottom: 1.5rem !important;
+  background-color: yellow;
+}
+.project-image-big {
+  padding: 0;
+  background-color: red;
+}
+
+/* test ends */
+
 .tile.is-8.is-vertical.is-parent {
   width: 100%;
 }
@@ -302,7 +316,7 @@
 }
 
 .portfolio__ar {
-  padding: var(--space-s) var(--space-xs);
+  /* padding: var(--space-s) var(--space-xs); */
   text-align: center;
   background-color: var(--gray1);
 }
@@ -381,7 +395,7 @@
     margin: 1rem 0;
   }
   .portfolio__ar {
-    padding: var(--space-s);
+    /* padding: var(--space-s); */
   }
   .portfolio__ar .game-format {
     display: flex;
@@ -394,7 +408,7 @@
 
 @media screen and (min-width: 769px) {
   .portfolio {
-    padding: var(--space-l) 0;
+    /* padding: var(--space-l) 0; */
   }
   .portfolio_image {
     justify-content: space-between;
@@ -473,7 +487,7 @@
     font-size: var(--size-s2) !important;
   }
   .portfolio__ar {
-    padding: var(--space-m) var(--space-s);
+    /* padding: var(--space-m) var(--space-s); */
   }
   .portfolio__ar .game-format .column {
     padding: 1.5rem;
@@ -491,7 +505,7 @@
 
 @media screen and (min-width: 1024px) {
   .portfolio {
-    padding: var(--space-xl) 0;
+    /* padding: var(--space-xl) 0; */
   }
   .portfolio article {
     margin-bottom: var(--space-l);
@@ -539,7 +553,7 @@
     padding: 0.7rem var(--space-xs) !important;
   }
   .portfolio__ar {
-    padding: var(--space-m) var(--space-s);
+    /* padding: var(--space-m) var(--space-s); */
   }
   .portfolio__ar .game-format {
     margin-top: -0.5rem;
@@ -559,7 +573,7 @@
     padding: 0.9rem var(--space-xs) !important;
   }
   .portfolio__ar {
-    padding: var(--space-m) var(--space-l);
+    /* padding: var(--space-m) var(--space-l); */
   }
 }
 @media screen and (min-width: 1441px) {
