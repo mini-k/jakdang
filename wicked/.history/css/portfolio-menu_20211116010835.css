@@ -22,14 +22,13 @@
 }
 .portfolio-menu .category-name {
   color: var(--white);
-  border-bottom: 3px var(--purple1) solid;
-  width: fit-content;
-  margin: 0 auto 1rem auto;
+  text-decoration: underline var(--purple1);
+  text-underline-position: under;
   transition: all 0.5s;
 }
 .portfolio-menu .column:hover h2 {
   color: var(--green2);
-  border-bottom: 3px var(--green2) solid;
+  text-decoration: underline var(--green2);
 }
 .portfolio-menu .description-big {
   color: var(--purple1);
@@ -49,7 +48,7 @@
 }
 
 .portfolio-menu-sm {
-  opacity: 0;
+  display: none;
   height: 40px;
   background-color: var(--purple2);
   position: fixed;
@@ -58,7 +57,7 @@
   width: 100%;
   z-index: 999;
   padding: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: display 0.5s ease-in-out;
 }
 .portfolio-menu-sm .container {
   margin: 0;
@@ -113,9 +112,6 @@
   /* .portfolio-menu .container {
     padding-top: var(--space-s);
   } */
-  .portfolio-menu .category-name {
-    margin: 0 auto 1.5rem auto;
-  }
   .portfolio-menu .arrowhead {
     width: 16%;
     height: 16%;

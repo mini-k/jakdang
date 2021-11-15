@@ -36,7 +36,7 @@
 .project-image-credit {
   position: absolute;
   /* transform: translate(-50%, -50%); */
-  bottom: 0.1%;
+  bottom: 2%;
   right: 0;
   background-color: rgba(151, 151, 151, 0.3);
   color: var(--white);
@@ -189,11 +189,14 @@ a.portfolio-introBtn:hover {
   padding: 0;
   padding-top: 0.2rem;
 }
+.project-text-description .table-container {
+  overflow-x: hidden;
+}
 .description-category {
   color: #c7c7c7;
 }
 .project-text-description .table td.description-category {
-  padding-right: 1.3rem;
+  padding-right: 1rem;
 }
 .project-text-description .table {
   display: none;
@@ -207,6 +210,9 @@ a.portfolio-introBtn:hover {
 }
 
 @media screen and (min-width: 426px) {
+  .project-image-credit {
+    bottom: 1%;
+  }
   .project-image-small {
     display: block;
     padding: 0;
