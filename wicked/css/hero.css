@@ -1,5 +1,15 @@
 .hero {
+    background-color: var(--black);
     height: 35rem;
+    padding: 0;
+    border-top: 1px var(--black) solid;
+
+}
+.hero .container {
+    margin: 0;
+}
+.hero-body {
+    padding: 0;
 }
 .website-headline {
     color: var(--white);
@@ -184,6 +194,9 @@
     .hero {
         height: 75rem;
     }
+    .hero .container {
+        margin: 0 auto;
+    }
     .website-headline .big {
         font-size: var(--size-l1);
     }
@@ -261,7 +274,7 @@
         font-size: var(--size-m1);
     }
     .hero .characters {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .hero .characters .castle {
         width: 26rem;

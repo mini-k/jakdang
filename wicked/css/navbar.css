@@ -1,9 +1,14 @@
 .navbar {
+  background-color: var(--black);
+  width: 100%;
   padding: 0 var(--space-xs);
-  background-color: transparent;
-  position: absolute;
+  border-bottom: 1px var(--black) solid;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
+}
+.navbar .container {
+  margin: 0;
 }
 .navbar .navbar-item {
   padding: 0;
@@ -38,5 +43,11 @@
     max-height: 6.25rem;
     width: 6.25rem;
     height: 6.25rem;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .navbar .container {
+    margin: 0 auto;
   }
 }

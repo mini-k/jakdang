@@ -1,3 +1,6 @@
+.bottom .container {
+  margin: 0;
+}
 .bottom .section-description {
   color: var(--gray9);
   margin-bottom: 1rem;
@@ -5,25 +8,18 @@
 .bottom img {
   width: 80%;
   display: block;
-  margin: 1rem auto;
+  margin: 1rem auto 0 auto;
 }
 
 @media screen and (min-width: 426px) {
   .bottom img {
-    width: 60%;
-    margin: var(--space-s) auto;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .bottom img {
-    width: 55%;
-    margin: 3rem auto;
+    width: 70%;
+    margin: var(--space-s) auto 0 auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .bottom img {
-    width: 60%;
+  .bottom .container {
+    margin: 0 auto;
   }
 }

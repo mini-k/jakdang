@@ -1,0 +1,71 @@
+.portfolio__ar {
+  padding: var(--space-m) 0;
+  text-align: center;
+  background-color: var(--gray1);
+}
+.portfolio__ar .description-big,
+.portfolio__ar .category-name {
+  text-align: left;
+}
+.portfolio__ar .game-format {
+  margin-top: 3rem;
+}
+.portfolio__ar .game-format .column {
+  padding: 1rem 0;
+}
+.game-format {
+  margin: 0 1rem;
+}
+.game-format .description-small {
+  color: var(--gray7);
+}
+.portfolio__ar .game-format .column-fill {
+  display: block;
+}
+.portfolio__ar .game-format .board img {
+  width: 50%;
+}
+.portfolio__ar .game-format .AR img {
+  width: 75%;
+}
+
+@media screen and (min-width: 426px) {
+  .portfolio__ar .game-format {
+    display: flex;
+    margin: 0;
+  }
+  .portfolio__ar .game-format .column {
+    flex-basis: auto;
+    padding: 0;
+  }
+  .portfolio__ar .game-format .board img {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .portfolio__ar .game-format .column {
+    padding: 1.5rem;
+  }
+  .column.is-narrow.board.is-2 {
+    padding: 1rem;
+  }
+  .portfolio__ar .game-format .board img {
+    width: 10rem;
+  }
+  .portfolio__ar .game-format .AR img {
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio__ar .game-format {
+    margin-top: -0.5rem;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .portfolio__ar .game-format .column {
+    padding: 1.5rem 3rem 3rem 3rem;
+  }
+}
