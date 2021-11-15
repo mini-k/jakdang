@@ -1,12 +1,12 @@
 .bottom .container {
-  margin: 0;
+  /* margin: 0; */
 }
 .bottom .section-description {
   color: var(--gray9);
   margin-bottom: 1rem;
 }
 .bottom img {
-  width: 80%;
+  /* width: 80%; */
   display: block;
   margin: 1rem auto 0 auto;
 }

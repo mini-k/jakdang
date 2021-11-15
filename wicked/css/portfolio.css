@@ -45,7 +45,7 @@
   width: fit-content;
 }
 .project-image-small {
-  display: none;
+  /* display: none; */
   background-color: var(--gray1);
 }
 .project-image-small img {
