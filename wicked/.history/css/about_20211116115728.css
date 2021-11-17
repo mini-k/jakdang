@@ -5,6 +5,7 @@
 }
 .about .container {
   display: flex;
+  /* margin: 0 0 0 var(--space-s); */
 }
 .about .column {
   padding: 0;

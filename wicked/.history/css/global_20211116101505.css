@@ -72,20 +72,18 @@ html {
   word-break: keep-all;
   overflow-wrap: break-word;
   scroll-behavior: smooth;
+  font-family: var(--family-sans-serif);
 }
-
 @media screen and (min-width: 769px) {
   html {
     font-size: 95%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   html {
     font-size: 100%;
   }
 }
-
 html button {
   font-size: inherit;
 }
@@ -141,7 +139,6 @@ strong,
   margin-left: 0;
   margin-right: 0;
 }
-
 @media screen and (min-width: 769px) {
   .tight-columns {
     margin-left: -1.5rem;
@@ -152,19 +149,16 @@ strong,
 section {
   padding: var(--space-m) 0;
 }
-
 @media screen and (min-width: 769px) {
   section {
     padding: var(--space-l) 0;
   }
 }
-
 @media screen and (min-width: 1024px) {
   section {
     padding: var(--space-xl) 0;
   }
 }
-
 .section-name {
   margin-bottom: 1.5rem;
   color: #1a1a1a;
@@ -174,13 +168,11 @@ section {
   font-size: var(--size-m2);
   line-height: 1.2;
 }
-
 @media screen and (min-width: 769px) {
   .section-name {
     font-size: var(--size-m1);
   }
 }
-
 @media screen and (min-width: 1024px) {
   .section-name {
     font-size: var(--size-l3);
@@ -188,33 +180,28 @@ section {
 }
 
 .container {
-  margin: 0 var(--space-xs);
+  margin: 0 var(--space-s);
 }
-
-@media screen and (min-width: 426px) {
+/* @media screen and (min-width: 426px) {
   .container {
     margin: 0 var(--space-s);
   }
-}
-
+} */
 @media screen and (min-width: 769px) {
   .container {
     margin: 0 var(--space-m);
   }
 }
-
 @media screen and (min-width: 1024px) {
   .container {
     margin: 0 8.2rem;
   }
 }
-
 @media screen and (min-width: 1441px) {
   .container {
     margin: 0 auto;
   }
 }
-
 .section-description {
   font-family: var(--family-sans-serif);
   margin-bottom: 1rem;
@@ -223,13 +210,11 @@ section {
   line-height: 1.5;
   text-align: center;
 }
-
 @media screen and (min-width: 769px) {
   .section-description {
     font-size: var(--size-s2);
   }
 }
-
 @media screen and (min-width: 1024px) {
   .section-description {
     font-size: var(--size-s1);
@@ -244,13 +229,11 @@ section {
   font-family: var(--family-serif);
   font-weight: 700;
 }
-
 @media screen and (min-width: 769px) {
   .category-name {
     font-size: var(--size-m2);
   }
 }
-
 @media screen and (min-width: 1024px) {
   .category-name {
     font-size: var(--size-m2);
@@ -261,6 +244,7 @@ section {
   font-weight: bold !important;
   font-size: var(--size-s2) !important;
   background-image: linear-gradient(155deg, #ff9c82, #fd1a67);
+  /* transition: all 0.3s; */
   position: relative;
   z-index: 1;
 }
@@ -286,7 +270,6 @@ section {
     font-size: var(--size-s1) !important;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .cta-main {
     font-size: var(--size-m3) !important;
@@ -304,24 +287,33 @@ a:hover {
 
 .button.is-large {
   font-size: 2rem;
-  font-family: var(--family-sans-serif);
+  /* padding-left: 1.5em;
+    padding-right: 1.5em; */
+  font-family: var(--family-serif);
+
   border-radius: 0.25em;
 }
 
 .description-big {
   font-size: var(--size-s3);
-  font-family: var(--family-sans-serif);
 }
 .description-small {
   font-size: var(--size-s4);
-  font-family: var(--family-sans-serif);
 }
-
 @media screen and (min-width: 769px) {
   .description-big {
     font-size: var(--size-s2);
   }
   .description-small {
     font-size: var(--size-s3);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
