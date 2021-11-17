@@ -58,10 +58,10 @@ const smallMenuEducation = document.getElementById('smallMenuEducation');
 
 window.addEventListener('scroll', () => {
   let offSet = window.pageYOffset;
-  const portfolioCustomOffset = document.getElementById('portfolio__custom').getBoundingClientRect().top + offSet - 2;
+  const portfolioCustomOffset = document.getElementById('portfolio__custom').getBoundingClientRect().top + offSet;
   const portfolioReadymadeOffset = document.getElementById('portfolio__readymade').getBoundingClientRect().top + offSet - 2;
-  const portfolioEducationOffset = document.getElementById('portfolio__education-process').getBoundingClientRect().top + offSet - 2;
-  const portfolioFinishOffset = document.getElementById('portfolio__education-process').getBoundingClientRect().bottom + offSet - 2;
+  const portfolioEducationOffset = document.getElementById('portfolio__education-process').getBoundingClientRect().top + offSet -2;
+  const portfolioFinishOffset = document.getElementById('portfolio__education-process').getBoundingClientRect().bottom + offSet -2;
   let currentOffset = window.scrollY || document.documentElement.scrollTop;
 
   if (currentOffset > portfolioFinishOffset) {
