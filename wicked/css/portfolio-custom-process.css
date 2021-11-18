@@ -2,33 +2,38 @@
   position: relative;
   padding: 0;
   overflow: hidden;
-  /* background-color: var(--gray1); */
-  background-color: var(--gray5);
-  border: 1px solid red;
+  background-color: var(--gray1);
+  /* border: 1px solid red; */
 }
 .portfolio-custom-process .photo {
   width: 120vw;
   max-width: 120vw;
   margin-left: -10vw;
   height: auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .portfolio-custom-process .text {
+  margin-top: 2rem;
   padding-bottom: var(--space-m);
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
-
+.portfolio-custom-process .text .container {
+  padding: 0 1rem;
+  /* border: 1px solid yellow; */
+}
 .portfolio-custom-process .category-name {
   color: var(--gray9);
-  margin-top: 1rem;
 }
 .portfolio-custom-process .question {
   @extend .description-big;
-  font-size: 1.5em;
+  font-size: 120%;
   font-family: var(--family-serif);
   margin: 0.5rem 0;
 }
-.custom-process-form .holygrail {
+.portfolio-custom-process .answer {
+  color: var(--gray7);
+}
+.portfolio-custom-process .holygrail {
   display: flex;
   min-height: 50px;
   flex-direction: column;
@@ -36,17 +41,17 @@
 .custom-process-form {
   display: flex;
   flex: 1;
-  margin: 1rem 0 !important;
-  border: 1px solid pink;
+  margin-top: 2rem;
+  /* border: 1px solid pink; */
 }
 .custom-process-form .icon {
   order: -1;
-  width: 19.9%;
+  flex: 0 0 75px;
   height: 100%;
-  border: 1px solid orange;
+  padding-right: 10px;
+  /* border: 1px solid orange; */
 }
-.custom-process-form img {
-  flex: 0 0 100px;
+.custom-process-form .icon img {
   order: -1;
 }
 .custom-process-form .form {
@@ -66,16 +71,21 @@
   border: var(--gray4) 1px solid;
   border-radius: 0.5rem;
   font-family: var(--family-sans-serif) !important;
+  margin-bottom: 0.5rem;
 }
+
 #mc_embed_signup input.button {
+  @extend .button;
   width: 100% !important;
-  background-image: linear-gradient(155deg, #ff9c82, #fd1a67) !important;
-  font-size: var(--size-s2) !important;
-  font-weight: 800;
+  font-weight: bold;
   height: auto;
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 0.4rem !important;
+  color: var(--white);
   font-family: var(--family-sans-serif) !important;
+}
+#mc_embed_signup input.button:hover {
+  background-image: linear-gradient(155deg, #ff4264, #96005a);
 }
 
 @media screen and (min-width: 426px) {
@@ -83,11 +93,9 @@
     margin: 1rem 0;
   }
   .portfolio-custom-process .answer {
-    text-align: left;
     margin: 1rem 0;
   }
 }
-
 @media screen and (min-width: 769px) {
   .portfolio-custom-process .photo {
     width: 50%;
@@ -100,6 +108,7 @@
     height: 100%;
     top: 0;
     right: 0;
+    margin-top: 0;
     padding-bottom: 0;
   }
   .portfolio-custom-process .text .container {
@@ -107,15 +116,16 @@
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    border: 1px solid yellow;
+    padding: 0;
   }
   .portfolio-custom-process .right {
     right: 0;
     width: 50%;
     height: fit-content;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
   }
-  .custom-process-form img {
+  .custom-process-form .icon {
+    flex: 0 0 90px;
   }
   #mc_embed_signup input.button {
     font-size: var(--size-s1) !important;
@@ -126,33 +136,15 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
-  #mc_embed_signup input.button {
-    font-size: var(--size-m3) !important;
-    padding: 0.6rem !important;
-    height: 60px;
+@media screen and (min-width: 1280px) {
+  .portfolio-custom-process .right {
+    width: 45%;
   }
-  #mc_embed_signup input.email {
-    font-size: var(--size-s1) !important;
-    padding: 0.7rem var(--space-xs) !important;
+  .custom-process-form {
+    width: 80%;
   }
-}
-
-@media screen and (min-width: 1216px) {
-  #mc_embed_signup .button {
-    padding: 0.8rem !important;
-  }
-  #mc_embed_signup input.email {
-    padding: 0.3rem var(--space-xs) !important;
-  }
-  .custom-process-form img {
-  }
-}
-
-@media screen and (min-width: 1441px) {
-  .portfolio-custom-process .container {
-    margin: 0 auto;
-  }
-  .custom-process-form img {
+  .custom-process-form .icon {
+    flex: 0 0 100px;
+    padding-right: 20px;
   }
 }
