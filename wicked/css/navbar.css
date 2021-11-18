@@ -2,7 +2,6 @@
   background-color: var(--black);
   width: 100%;
   padding: 0 var(--space-xs);
-  border-bottom: 1px var(--black) solid;
 }
 .navbar .container {
   margin: 0;

@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
-  padding: 0;
+  padding: 1rem 0 2rem 0;
 }
 .portfolio-menu .container {
   padding-top: var(--space-s);
@@ -19,22 +19,22 @@
   cursor: pointer;
 }
 .portfolio-menu .category-name {
-  color: var(--white);
-  border-bottom: 3px var(--purple1) solid;
   width: fit-content;
   margin: 0 auto 1rem auto;
   transition: all 0.5s;
+  color: var(--white);
+  border-bottom: 3px var(--purple1) solid;
+  font-family: var(--family-serif);
 }
-.portfolio-menu .column:hover h2 {
+.portfolio-menu .column:hover h3 {
   color: var(--green2);
   border-bottom: 3px var(--green2) solid;
 }
-.portfolio-menu .description-big {
+.portfolio-menu .category-subtitle {
   color: var(--purple1);
   transition: all 0.5s;
-  display: none;
 }
-.portfolio-menu .column:hover .description-big {
+.portfolio-menu .column:hover .category-subtitle {
   color: var(--green2);
 }
 .portfolio-menu .arrowhead {
@@ -65,6 +65,9 @@
   padding: 0rem;
   height: inherit;
   cursor: pointer;
+}
+.portfolio-menu-sm .column:hover {
+  background-color: var(--purple3);
 }
 .portfolio-menu-sm p {
   font-family: var(--family-serif);

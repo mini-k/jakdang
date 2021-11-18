@@ -2,8 +2,6 @@
     background-color: var(--black);
     height: 35rem;
     padding: 0;
-    border-top: 1px var(--black) solid;
-
 }
 .hero .container {
     margin: 0;
@@ -12,14 +10,11 @@
     padding: 0;
 }
 .website-headline {
+    margin: var(--space-xs) auto 0 auto;
     color: var(--white);
     font-family: var(--family-serif);
     font-weight: 700;
     text-align: center;
-    margin: 0 auto;
-    line-height: 1.2;
-    text-shadow: 0 0.5em 0 var(--black);
-    margin-top: var(--space-xs);
 }
 .website-headline .big {
     font-size: var(--size-m1);

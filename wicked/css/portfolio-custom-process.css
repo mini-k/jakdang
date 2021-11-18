@@ -1,50 +1,58 @@
 .portfolio-custom-process {
-  background-color: var(--gray1);
+  position: relative;
   padding: 0;
+  overflow: hidden;
+  /* background-color: var(--gray1); */
+  background-color: var(--gray5);
+  border: 1px solid red;
 }
-.portfolio-custom-process .container {
-  margin: 0;
-}
-.portfolio-custom-process .columns {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.portfolio-custom-process .column.is-5 {
-  padding: 0 3rem !important;
+.portfolio-custom-process .photo {
+  width: 120vw;
+  max-width: 120vw;
+  margin-left: -10vw;
+  height: auto;
+  border: 1px solid blue;
 }
 .portfolio-custom-process .text {
-  padding-bottom: var(--space-xs);
+  padding-bottom: var(--space-m);
+  border: 1px solid green;
 }
-.custom-process-form {
-  flex-direction: row !important;
-  margin: 1rem 0 !important;
-}
-.portfolio-custom-process .column {
-  padding: 0;
-}
+
 .portfolio-custom-process .category-name {
   color: var(--gray9);
   margin-top: 1rem;
 }
-.portfoli-custom-process .question {
+.portfolio-custom-process .question {
+  @extend .description-big;
+  font-size: 1.5em;
   font-family: var(--family-serif);
   margin: 0.5rem 0;
 }
-.custom-process-form .column {
-  margin-top: 1rem;
-  flex-basis: auto;
-  flex-grow: 0;
+.custom-process-form .holygrail {
+  display: flex;
+  min-height: 50px;
+  flex-direction: column;
 }
-.custom-process-form .column.is-3 {
-  width: 25%;
+.custom-process-form {
+  display: flex;
+  flex: 1;
+  margin: 1rem 0 !important;
+  border: 1px solid pink;
 }
-.custom-process-form .column.is-9 {
-  width: 75%;
+.custom-process-form .icon {
+  order: -1;
+  width: 19.9%;
+  height: 100%;
+  border: 1px solid orange;
 }
 .custom-process-form img {
-  width: 80%;
+  flex: 0 0 100px;
+  order: -1;
 }
+.custom-process-form .form {
+  flex: 1;
+}
+
 #mc_embed_signup {
   background-color: var(--gray1);
 }
@@ -53,7 +61,7 @@
 }
 #mc_embed_signup input.email {
   width: 100% !important;
-  padding: 0.9rem var(--space-xs) !important;
+  padding: 0.5rem var(--space-xs) !important;
   font-size: var(--size-s3) !important;
   border: var(--gray4) 1px solid;
   border-radius: 0.5rem;
@@ -71,9 +79,6 @@
 }
 
 @media screen and (min-width: 426px) {
-  .custom-process-form img {
-    width: 65%;
-  }
   .portfolio-custom-process .question {
     margin: 1rem 0;
   }
@@ -84,26 +89,33 @@
 }
 
 @media screen and (min-width: 769px) {
-  .portfolio-custom-process .container {
-    margin: 0 var(--space-m) 0 0;
-  }
-  .portfolio-custom-process .columns {
-    flex-direction: row;
-  }
-  .portfolio-custom-process .column.is-7 {
-    position: relative;
-    width: 80%;
-  }
-  .portfolio-custom-process .column.is-5 {
-    position: absolute;
-    right: 0;
-    padding: 0 !important;
+  .portfolio-custom-process .photo {
+    width: 50%;
+    margin-left: 0;
   }
   .portfolio-custom-process .text {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
     padding-bottom: 0;
   }
+  .portfolio-custom-process .text .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    border: 1px solid yellow;
+  }
+  .portfolio-custom-process .right {
+    right: 0;
+    width: 50%;
+    height: fit-content;
+    border: 1px solid purple;
+  }
   .custom-process-form img {
-    width: 80%;
   }
   #mc_embed_signup input.button {
     font-size: var(--size-s1) !important;
@@ -115,12 +127,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .portfolio-custom-process .container {
-    margin: 0 8.2rem 0 0;
-  }
-  .portfolio-custom-process .column.is-7 {
-    width: 70%;
-  }
   #mc_embed_signup input.button {
     font-size: var(--size-m3) !important;
     padding: 0.6rem !important;
@@ -133,18 +139,13 @@
 }
 
 @media screen and (min-width: 1216px) {
-  .portfoli-custom-process .column.is-7 {
-    width: 62%;
-  }
   #mc_embed_signup .button {
     padding: 0.8rem !important;
   }
   #mc_embed_signup input.email {
-    padding: 0.9rem var(--space-xs) !important;
+    padding: 0.3rem var(--space-xs) !important;
   }
   .custom-process-form img {
-    width: 90%;
-    max-width: 106px;
   }
 }
 
@@ -153,7 +154,5 @@
     margin: 0 auto;
   }
   .custom-process-form img {
-    width: 100%;
-    max-width: 106px;
   }
 }
