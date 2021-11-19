@@ -341,6 +341,7 @@ html input {
 }
 
 .cta-main {
+  font-family: var(--family-sans-serif);
   font-weight: bold !important;
   font-size: var(--size-s2) !important;
 }
