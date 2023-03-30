@@ -33,7 +33,7 @@ const menuToEducationProcessArray = Object.keys(menuToEducationProcess).map(func
 
 menuToCustomArray.forEach(item => {
 item.addEventListener('click', () => {
-  document.getElementById('portfolio__custom').scrollIntoView();
+  document.getElementById('portfolio__custom').scrollIntoView({ behavior: "smooth" });
 })
 });
 menuToReadymadeArray.forEach(item => {
